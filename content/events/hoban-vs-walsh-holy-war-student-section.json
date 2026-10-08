@@ -8,9 +8,9 @@
   "photographer": "Mason Bybee",
   "cover": "",
   "gallery": [],
-  "auto_gallery": true,
-  "video_url": "",
+  "auto_gallery": false,
+  "video_url": "https://www.instagram.com/p/Dd0An-_gnh-/",
   "external_url": "",
   "featured": true,
-  "published": false
+  "published": true
 }
