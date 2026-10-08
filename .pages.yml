@@ -29,7 +29,7 @@ content:
         type: select
         required: true
         options:
-          values: [Football, Basketball, Volleyball, Soccer, Boxing, MMA, Concerts, Interviews, Media Day, Other]
+          values: [Football, Basketball, Volleyball, Baseball, Soccer, Boxing, MMA, Concerts, Interviews, Media Day, Other]
       - name: event_date
         label: Event Date (if known)
         type: date

@@ -31,10 +31,10 @@
     return `<a class="project-card" href="${pageHref(e)}"><div class="project-cover">${cover?`<img loading="lazy" src="${esc(cover)}" alt="${esc(e.title)}">`:`<span class="placeholder-mark" aria-hidden="true">${esc(abbreviation(e))}</span>`}<span class="project-corner">SCS / ${esc(e.category||'COVERAGE')}</span><span class="project-bottom">${count?`${count} PHOTOS`:(extURL(e.external_url)?'LIGHTROOM ALBUM AVAILABLE':'PHOTOS COMING SOON')} ↗</span></div><div class="project-meta"><b>${esc(e.category||'EVENT')}</b><span>${esc(eDate(e)||e.location||'EVENT COVERAGE')}</span></div><h3>${esc(e.title)}</h3><p>${esc((e.summary||'').length>134?e.summary.slice(0,131)+'...':e.summary||'View this event in the Summit County Sports archive.')}</p></a>`};
   if(document.body.dataset.page==='portfolio'){
     const grid=document.getElementById('project-grid');const buttons=[...document.querySelectorAll('.filter')];
-    const special=new Set(['Football','Volleyball','Basketball']);
+    const special=new Set(['Football','Volleyball','Basketball','Baseball']);
     function filter(val){buttons.forEach(b=>{const active=b.dataset.category===val;b.classList.toggle('active',active);b.setAttribute('aria-pressed',String(active))});let filtered=events.filter(e=>val==='All'||(val==='Other'?!special.has(e.category):e.category===val));grid.innerHTML=filtered.length?filtered.map(card).join(''):`<div class="empty-state"><h3>MORE STORIES COMING.</h3><p>Nothing has been published in this category yet. Follow our Instagram for more coverage while galleries are being added.</p><a class="under-link" href="${esc(ig)}" target="_blank" rel="noopener">VIEW MORE WORK ↗</a></div>`;}
     buttons.forEach(b=>b.addEventListener('click',()=>{filter(b.dataset.category);const p=new URL(location.href);if(b.dataset.category==='All')p.searchParams.delete('category');else p.searchParams.set('category',b.dataset.category);history.replaceState(null,'',p)}));
-    const p=new URLSearchParams(location.search).get('category');filter(['Football','Basketball','Volleyball','Other'].includes(p)?p:'All');
+    const p=new URLSearchParams(location.search).get('category');filter(['Football','Basketball','Volleyball','Baseball','Other'].includes(p)?p:'All');
   }
   if(document.body.dataset.page==='event'){
     const slug=new URLSearchParams(location.search).get('slug');const e=events.find(e=>e.slug===slug);const heading=document.getElementById('event-heading'), gallery=document.getElementById('event-gallery'), links=document.getElementById('event-links');
