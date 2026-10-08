@@ -13,7 +13,7 @@ A photography/media site for Summit County Sports with a real, **no-code gallery
 - `content/site.json` — social and contact information you can edit in the dashboard.
 - `build.mjs` — builds the public website automatically from gallery content; Node 18+.
 
-**NOTE:** This is a working website package, **not yet a hosted or connected CMS**. Uploads from a browser only start working after the steps below. No actual Byron Nelson photographs have been added. The page intentionally says *photos coming soon* instead of displaying fake photographs.
+**CURRENT STATUS:** Byron Nelson Volleyball Media Day has all **122 web-ready JPEGs** committed under `assets/uploads/byron-nelson-volleyball-media-day/`, and its gallery entry points to those files. Netlify is connected and was publishing successfully before this gallery upload. Verify the latest deployment in Netlify. Pages CMS still needs authorization in your GitHub account before browser-based editing can be used.
 
 ## Publish once and enable easy photo uploads
 
@@ -43,7 +43,7 @@ A photography/media site for Summit County Sports with a real, **no-code gallery
 - Red and black responsive branding: included.
 - Byron Nelson media day landing page: included.
 - Working client-side portfolio filters and image lightbox: included.
-- Gallery editor integration: configured, requires GitHub + Pages CMS setup.
-- Hosting/domain/account connection: **not completed** (requires your account permissions).
-- Actual photos: **not included** (need your exports).
+- Gallery editor integration: configured, requires Pages CMS authorization through GitHub.
+- Netlify: connected; confirm the most recent deployment is published. A custom domain has not been configured.
+- Actual photos: **122 Byron Nelson JPEGs included in GitHub** (`assets/uploads/byron-nelson-volleyball-media-day/`).
 - Byron Nelson description references its verified **2025** MaxPreps championship, not an unverified live 2026 ranking. Source: https://www.maxpreps.com/news/HaLCvCcN5EOFQrL4Sm8Vdw/byron-nelson-volleyball-team-presented-with-maxpreps-national-championship-banner-at-pep-rally.htm
