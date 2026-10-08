@@ -61,8 +61,8 @@ const copy = p => {
     const externalDataScript = /<script defer src="assets\/content-data\.js[^"]*"><\/script>/;
     if (!externalDataScript.test(html)) throw new Error(`Gallery data script missing from ${p}`);
     const current = html.replace(externalDataScript, inlineGalleryData)
-      .replace(/app\\.js\\?v=[^"]+/g, `app.js?v=${assetVersion('app.js')}`)
-      .replace(/styles\\.css\\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`);
+      .replace(/app\.js\?v=[^"]+/g, `app.js?v=${assetVersion('app.js')}`)
+      .replace(/styles\.css\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`);
     fs.writeFileSync(destination, current);
   } else {
     fs.copyFileSync(path.join(root, p), destination);
