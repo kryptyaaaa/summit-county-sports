@@ -48,7 +48,21 @@ const contentPath = path.join(root, 'assets', 'content-data.js');
 fs.writeFileSync(contentPath, js);
 fs.rmSync(target, { recursive: true, force: true });
 fs.mkdirSync(path.join(target, 'assets', 'uploads'), { recursive: true });
-const copy = p => { const destination = path.join(target, p); fs.mkdirSync(path.dirname(destination), { recursive: true }); fs.copyFileSync(path.join(root, p), destination); };
+// Bake fresh gallery data into each HTML page, rather than relying on a
+// separately cached content-data.js file that can show an outdated portfolio.
+const inlineGalleryData = `<script>${js}</script>`;
+const copy = p => {
+  const destination = path.join(target, p);
+  fs.mkdirSync(path.dirname(destination), { recursive: true });
+  if (p.endsWith('.html')) {
+    const html = fs.readFileSync(path.join(root, p), 'utf8');
+    const externalDataScript = /<script defer src="assets\/content-data\.js[^"]*"><\/script>/;
+    if (!externalDataScript.test(html)) throw new Error(`Gallery data script missing from ${p}`);
+    fs.writeFileSync(destination, html.replace(externalDataScript, inlineGalleryData));
+  } else {
+    fs.copyFileSync(path.join(root, p), destination);
+  }
+};
 ['index.html', 'portfolio.html', 'event.html', 'styles.css', 'app.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
 let count = 0;
 for (const event of publicEvents) {
