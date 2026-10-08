@@ -15,7 +15,18 @@ const events = fs.readdirSync(eventsDir).filter(f => f.endsWith('.json')).map(fi
     published: raw.published !== false,
   };
 }).filter(e => e.published).sort((a, b) => Number(!!b.featured) - Number(!!a.featured) || String(b.event_date || '').localeCompare(String(a.event_date || '')) || a.title.localeCompare(b.title));
-const data = { site, events };
+const photoIsAvailable = value => {
+  if (typeof value !== 'string' || !value) return false;
+  if (/^https?:\/\//i.test(value)) return true;
+  const clean = value.replace(/^\/+/, '');
+  return clean.startsWith('assets/uploads/') && !clean.includes('..') && fs.existsSync(path.join(root, clean));
+};
+const publicEvents = events.map(event => ({
+  ...event,
+  cover: photoIsAvailable(event.cover) ? event.cover : '',
+  gallery: event.gallery.filter(photoIsAvailable),
+}));
+const data = { site, events: publicEvents };
 const js = `/* Generated from Pages CMS gallery files. Regenerate with node build.mjs. */\nwindow.SCS_CONTENT = ${JSON.stringify(data, null, 2).replace(/</g, '\\u003c')};\n`;
 const contentPath = path.join(root, 'assets', 'content-data.js');
 fs.writeFileSync(contentPath, js);
@@ -24,7 +35,7 @@ fs.mkdirSync(path.join(target, 'assets', 'uploads'), { recursive: true });
 const copy = p => { const destination = path.join(target, p); fs.mkdirSync(path.dirname(destination), { recursive: true }); fs.copyFileSync(path.join(root, p), destination); };
 ['index.html', 'portfolio.html', 'event.html', 'styles.css', 'app.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
 let count = 0;
-for (const event of events) {
+for (const event of publicEvents) {
   for (const image of [event.cover, ...event.gallery]) {
     if (typeof image !== 'string' || !image) continue;
     const clean = image.replace(/^\//, '');

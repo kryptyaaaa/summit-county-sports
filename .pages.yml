@@ -54,7 +54,7 @@ content:
         type: image
         options:
           multiple:
-            max: 100
+            max: 150
           unique: true
           extensions: [jpg, jpeg, png, webp, avif]
           rename: safe
