@@ -1,0 +1,102 @@
+# Pages CMS (https://app.pagescms.org). Connect your GitHub repo once to edit from any browser.
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  rename: safe
+  categories: [image]
+content:
+  - name: galleries
+    label: Event Galleries
+    type: collection
+    path: content/events
+    format: json
+    filename: "{primary}.json"
+    view:
+      primary: title
+      fields: [title, category, event_date, published, featured]
+      sort: [event_date, title]
+      default:
+        sort: event_date
+        order: desc
+    fields:
+      - name: title
+        label: Event or Gallery Title
+        type: string
+        required: true
+        description: Example — Byron Nelson Volleyball Media Day
+      - name: category
+        label: Sport or Category
+        type: select
+        required: true
+        options:
+          values: [Football, Basketball, Volleyball, Soccer, Boxing, MMA, Concerts, Interviews, Media Day, Other]
+      - name: event_date
+        label: Event Date (if known)
+        type: date
+      - name: location
+        label: Location
+        type: string
+      - name: short_label
+        label: Small headline / label
+        type: string
+      - name: summary
+        label: Event Description
+        type: text
+      - name: photographer
+        label: Photographer Credit
+        type: string
+      - name: cover
+        label: Cover Image
+        type: image
+        description: Main image shown on the homepage and portfolio. Upload a JPG or WebP.
+      - name: gallery
+        label: Gallery Photos — upload as many as needed
+        type: image
+        options:
+          multiple:
+            max: 100
+          unique: true
+          extensions: [jpg, jpeg, png, webp, avif]
+          rename: safe
+        description: Choose or upload multiple photos, then save. Add more later by reopening the gallery.
+      - name: video_url
+        label: Video Link (optional)
+        type: string
+        description: Link to published Instagram, YouTube or Vimeo video.
+      - name: external_url
+        label: Other Coverage Link (optional)
+        type: string
+      - name: featured
+        label: Feature on the Home Page
+        type: boolean
+      - name: published
+        label: Visible on Site
+        type: boolean
+        description: Turn this off to save a gallery as a private draft.
+  - name: site
+    label: Site Info & Contact
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Outlet Name
+        type: string
+      - name: tagline
+        label: Website Tagline
+        type: string
+      - name: description
+        label: About Description
+        type: text
+      - name: instagram
+        label: Instagram URL
+        type: string
+      - name: instagram_label
+        label: Instagram Display Name
+        type: string
+      - name: email
+        label: Public Contact Email
+        type: string
+      - name: coverage_area
+        label: Coverage Area
+        type: string
