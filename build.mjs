@@ -21,11 +21,27 @@ const photoIsAvailable = value => {
   const clean = value.replace(/^\/+/, '');
   return clean.startsWith('assets/uploads/') && !clean.includes('..') && fs.existsSync(path.join(root, clean));
 };
-const publicEvents = events.map(event => ({
-  ...event,
-  cover: photoIsAvailable(event.cover) ? event.cover : '',
-  gallery: event.gallery.filter(photoIsAvailable),
-}));
+// Galleries with auto_gallery enabled discover image files uploaded directly to
+// assets/uploads/<event-slug>/ on every build. Other galleries retain curated order.
+const automaticGalleryImages = event => {
+  if (event.auto_gallery !== true) return [];
+  const directory = `assets/uploads/${event.slug}`;
+  const absolute = path.join(root, directory);
+  if (!fs.existsSync(absolute) || !fs.statSync(absolute).isDirectory()) return [];
+  return fs.readdirSync(absolute, { withFileTypes: true })
+    .filter(file => file.isFile() && /\.(jpe?g|png|webp|avif)$/i.test(file.name))
+    .map(file => `${directory}/${file.name}`)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
+};
+const publicEvents = events.map(event => {
+  const curated = event.gallery.filter(photoIsAvailable);
+  const gallery = [...new Set([...curated, ...automaticGalleryImages(event)])];
+  return {
+    ...event,
+    cover: photoIsAvailable(event.cover) ? event.cover : (gallery[0] || ''),
+    gallery,
+  };
+});
 const data = { site, events: publicEvents };
 const js = `/* Generated from Pages CMS gallery files. Regenerate with node build.mjs. */\nwindow.SCS_CONTENT = ${JSON.stringify(data, null, 2).replace(/</g, '\\u003c')};\n`;
 const contentPath = path.join(root, 'assets', 'content-data.js');

@@ -59,6 +59,10 @@ content:
           extensions: [jpg, jpeg, png, webp, avif]
           rename: safe
         description: Choose or upload multiple photos, then save. Add more later by reopening the gallery.
+      - name: auto_gallery
+        label: Automatically include photos in the event's upload folder
+        type: boolean
+        description: Turn on to show all JPG/PNG/WebP/AVIF files uploaded to assets/uploads/<event-filename>/ automatically. No need to select each image in Gallery Photos.
       - name: video_url
         label: Video Link (optional)
         type: string

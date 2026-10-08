@@ -22,6 +22,18 @@ After activation, every push to the `main` branch will run `node build.mjs` and 
 
 **Important:** The old Netlify project may remain connected to the repository and could attempt to deploy future changes when its credits reset. Once the new GitHub Pages site is verified live, disconnect GitHub or disable auto-publishing in the old Netlify project to avoid unwanted credit usage.
 
+## Upload baseball photos without editing anything
+
+**St. Vincent–St. Mary vs GlenOak (2025–26):** [Open the upload folder](https://github.com/kryptyaaaa/summit-county-sports/tree/main/assets/uploads/stvm-vs-glenoak-baseball-2025-26).
+
+1. Open the folder link while signed into GitHub.
+2. Click **Add file → Upload files**. Select your edited JPG, JPEG, PNG, WebP or AVIF photos; **do not upload a ZIP**. GitHub's browser upload accepts up to 100 files per batch.
+3. Click **Commit changes**. This starts the automatic GitHub Pages build.
+
+The website **automatically discovers every supported image in this folder**, sorts the filenames naturally, displays them in the baseball gallery, and uses the first image as the cover **without editing any gallery JSON**. To change the cover later, specify a `cover` path in the event JSON; otherwise it automatically uses the first uploaded photo. To remove a picture, delete that file from this folder. Other games won't be affected.
+
+**Upload only photos from this game into this folder.** Prefer optimized sRGB JPGs (roughly 2000–3000px on the long edge) so the site loads quickly.
+
 ## Published galleries
 
 | Event | Photos | Gallery JSON |

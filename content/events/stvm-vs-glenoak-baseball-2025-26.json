@@ -11,5 +11,6 @@
   "video_url": "",
   "external_url": "",
   "featured": false,
-  "published": true
+  "published": true,
+  "auto_gallery": true
 }
