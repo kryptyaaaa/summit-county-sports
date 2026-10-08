@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
@@ -51,6 +52,7 @@ fs.mkdirSync(path.join(target, 'assets', 'uploads'), { recursive: true });
 // Bake fresh gallery data into each HTML page, rather than relying on a
 // separately cached content-data.js file that can show an outdated portfolio.
 const inlineGalleryData = `<script>${js}</script>`;
+const assetVersion = file => crypto.createHash('sha256').update(fs.readFileSync(path.join(root, file))).digest('hex').slice(0,12);
 const copy = p => {
   const destination = path.join(target, p);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
@@ -58,7 +60,10 @@ const copy = p => {
     const html = fs.readFileSync(path.join(root, p), 'utf8');
     const externalDataScript = /<script defer src="assets\/content-data\.js[^"]*"><\/script>/;
     if (!externalDataScript.test(html)) throw new Error(`Gallery data script missing from ${p}`);
-    fs.writeFileSync(destination, html.replace(externalDataScript, inlineGalleryData));
+    const current = html.replace(externalDataScript, inlineGalleryData)
+      .replace(/app\\.js\\?v=[^"]+/g, `app.js?v=${assetVersion('app.js')}`)
+      .replace(/styles\\.css\\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`);
+    fs.writeFileSync(destination, current);
   } else {
     fs.copyFileSync(path.join(root, p), destination);
   }
