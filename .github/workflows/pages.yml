@@ -35,6 +35,11 @@ jobs:
       - name: Check media integrity
         run: |
           test -s _site/assets/content-data.js
+          # The Football card and photo gallery must be present in the actual HTML served to visitors.
+          grep -q 'hoban-vs-nfl-academy-football-2026' _site/portfolio.html
+          grep -q '"published": true' _site/portfolio.html
+          ! grep -q 'src="assets/content-data.js' _site/portfolio.html
+          test "$(find _site/assets/uploads/hoban-vs-nfl-academy-football-2026 -maxdepth 1 -name '*.jpg' | wc -l)" -ge 30
           test "$(find _site/assets/uploads/byron-nelson-volleyball-media-day -maxdepth 1 -name '*.jpg' | wc -l)" -eq 111
           test "$(find _site/assets/uploads/jackson-volleyball-media-day -maxdepth 1 -name '*.jpg' | wc -l)" -eq 24
           test "$(find _site/assets/uploads/wadsworth-girls-volleyball -maxdepth 1 -name '*.jpg' | wc -l)" -eq 41
