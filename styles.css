@@ -84,5 +84,5 @@
 /* Keep the lower half of cover photographs in frame across the homepage and archive. */
 .hero-story-main img{object-position:center 40%}
 .hero-story-side img{object-position:center 38%}
-.project-cover img{object-position:center 15%}
+.project-cover img{object-position:center 10%}
 .feature-artwork .feature-photo{object-fit:cover;object-position:center 32%;background:none}
