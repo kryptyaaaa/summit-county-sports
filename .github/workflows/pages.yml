@@ -38,6 +38,8 @@ jobs:
           node --check app.js
           grep -q 'hoban-vs-walsh-holy-war-student-section' _site/portfolio.html
           grep -q 'Dd0An-_gnh-' _site/portfolio.html
+          grep -q '1KCScHyQgxnZdm4hFObMq3uYw0f5TxS9Z' _site/portfolio.html
+          grep -q 'drive.google.com/file/d/' _site/app.js
           grep -q 'AL3A1394.jpg' _site/portfolio.html
           grep -q 'feature-video-artwork' _site/app.js
           # The Football card and photo gallery must be present in the actual HTML served to visitors.
