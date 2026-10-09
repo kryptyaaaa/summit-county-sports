@@ -62,3 +62,11 @@ Run `node build.mjs` (Node 18+), then `python3 -m http.server 8000 -d _site` and
 ## About
 
 This portfolio is independently built for Summit County Sports. Its photography and media credits belong to the original photographers.
+
+## Concert photography and live music
+
+Concerts belong to the **Concerts** portfolio category (not "More"). The homepage has a dedicated Concerts link in "What We Cover," and the main navigation links to [the concert archive](https://kryptyaaaa.github.io/summit-county-sports/portfolio.html?category=Concerts).
+
+For each real show, create one JSON file in `content/events/<artist-or-show>-<venue>-<date>.json`, using `category: "Concerts"`. Give it a clear `title`, `event_date` (YYYY-MM-DD), `location`, optional `artist` and `venue`, `photographer`, `summary`, and `auto_gallery: true`. Use `published: false` until images are ready, then publish. Set `featured: true` only if you want a homepage Spotlight card. Optional `video_url` supports YouTube, Vimeo, and Instagram links.
+
+Create an upload folder at `assets/uploads/<same-event-slug>/` (with a `.gitkeep` if it's empty) and upload edited JPG/WebP/PNG/AVIF photos there. The site build discovers them automatically. To choose a cover, set `cover` to an image path within that folder. The individual artist or venue does **not** need its own website or external hosting.
