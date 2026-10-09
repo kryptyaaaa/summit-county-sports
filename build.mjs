@@ -49,6 +49,8 @@ const contentPath = path.join(root, 'assets', 'content-data.js');
 fs.writeFileSync(contentPath, js);
 fs.rmSync(target, { recursive: true, force: true });
 fs.mkdirSync(path.join(target, 'assets', 'uploads'), { recursive: true });
+// GitHub Pages custom domain for the Actions-deployed artifact.
+fs.writeFileSync(path.join(target, 'CNAME'), 'summitcountysports.com\n');
 // Bake fresh gallery data into each HTML page, rather than relying on a
 // separately cached content-data.js file that can show an outdated portfolio.
 const inlineGalleryData = `<script>${js}</script>`;
