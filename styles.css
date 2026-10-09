@@ -100,3 +100,9 @@ body[data-page="portfolio"] .project-card:hover .project-cover img[src*="byron-n
   .feature-artwork .feature-photo[src*="byron-nelson-volleyball-media-day/"]{object-position:center 8%}
   .hero-story-side img[src*="byron-nelson-volleyball-media-day/"]{object-position:center 5%}
 }
+
+/* Mobile Ellet vs Garfield soccer portfolio cover: shift framing upward, without translating the image. */
+@media (max-width:560px){
+  body[data-page="portfolio"] .project-cover img[src*="ellet-vs-garfield-boys-soccer/"]{object-fit:cover;object-position:center 68%;transform:none}
+  body[data-page="portfolio"] .project-card:hover .project-cover img[src*="ellet-vs-garfield-boys-soccer/"]{transform:scale(1.04)}
+}
