@@ -20,15 +20,20 @@
   const mail=site.email&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(site.email)?site.email:'';
   document.querySelectorAll('[data-contact-link]').forEach(a=>a.href=mail?'mailto:'+encodeURIComponent(mail):ig);
   document.querySelectorAll('[data-contact-text]').forEach(el=>el.textContent=mail?'Email: '+mail:'Instagram: '+(site.instagram_label||'@masontookem'));
-  // Featured media: native gallery cover or a playable Instagram post.
+  // Each featured story gets its own full Spotlight card.
   if(document.body.dataset.page==='home'){
-    const target=document.getElementById('featured-project');const e=events.find(e=>e.featured)||events[0];
-    if(target&&e){
-      const cover=preview(e),embed=instagramEmbed(e.video_url);
-      const artwork=embed
-        ?`<div class="feature-artwork feature-video-artwork"><iframe class="ig-embed" src="${esc(embed)}" title="Watch ${esc(e.title)} on Instagram" loading="lazy" allowfullscreen></iframe></div>`
-        :`<div class="feature-artwork">${cover?`<img class="feature-photo" src="${esc(cover)}" alt="${esc(e.title)} cover photo" loading="lazy"><div class="feature-overlay"></div>`:`<span class="graphic-large">${esc(abbreviation(e))}</span>`}<div class="graphic-corner">FEATURED COVERAGE / SCS</div><span class="graphic-caption">${esc(e.title)}</span><div class="graphic-credit">${cover?esc(e.photographer||'SUMMIT COUNTY SPORTS'):'PHOTOS BEING ADDED'}</div></div>`;
-      target.innerHTML=`${artwork}<div class="feature-description"><span class="tag">FEATURED / ${esc(e.category||'COVERAGE')}</span><h3>${esc(e.title)}</h3><p>${esc(e.summary||'Explore the story, the people, and the moments behind this event.')}</p><a class="arrow-link" href="${pageHref(e)}">${embed?'WATCH THE FEATURE':e.gallery.length?'VIEW THE GALLERY':'VIEW PROJECT DETAILS'} ↗</a>${embed?`<a class="arrow-link video-external-link" href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH ON INSTAGRAM ↗</a>`:''}</div>`;
+    const target=document.getElementById('featured-project');
+    const featured=events.filter(e=>e.featured).sort((a,b)=>
+      Number(b.slug==='byron-nelson-volleyball-media-day')-Number(a.slug==='byron-nelson-volleyball-media-day'));
+    if(target){
+      target.innerHTML=(featured.length?featured:events.slice(0,1)).map(e=>{
+        const cover=preview(e),embed=instagramEmbed(e.video_url);
+        const artwork=embed
+          ?`<div class="feature-artwork feature-video-artwork"><iframe class="ig-embed" src="${esc(embed)}" title="Watch ${esc(e.title)} on Instagram" loading="lazy" allowfullscreen></iframe></div>`
+          :`<div class="feature-artwork">${cover?`<img class="feature-photo" src="${esc(cover)}" alt="${esc(e.title)} cover photo" loading="lazy"><div class="feature-overlay"></div>`:`<span class="graphic-large">${esc(abbreviation(e))}</span>`}<div class="graphic-corner">FEATURED COVERAGE / SCS</div><span class="graphic-caption">${esc(e.title)}</span><div class="graphic-credit">${cover?esc(e.photographer||'SUMMIT COUNTY SPORTS'):'PHOTOS BEING ADDED'}</div></div>`;
+        const info=`<div class="feature-description"><span class="tag">FEATURED / ${esc(e.category||'COVERAGE')}</span><h3>${esc(e.title)}</h3><p>${esc(e.summary||'Explore the story, the people, and the moments behind this event.')}</p><a class="arrow-link" href="${pageHref(e)}">${embed?'WATCH THE FEATURE':e.gallery.length?'VIEW THE GALLERY':'VIEW PROJECT DETAILS'} ↗</a>${embed?`<a class="arrow-link video-external-link" href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH ON INSTAGRAM ↗</a>`:''}</div>`;
+        return `<article class="featured-project">${artwork}${info}</article>`;
+      }).join('');
     }
   }
   // Portfolio cards and quick category navigation.
