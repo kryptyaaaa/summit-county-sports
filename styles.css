@@ -27,8 +27,8 @@
 
 /* Homepage live editorial cards — replace the decorative red poster with real featured work. */
 .hero-stories{width:100%;height:550px;display:grid;grid-template-rows:minmax(0,1fr) minmax(0,1fr);gap:15px}
-.hero-story{display:block;position:relative;isolation:isolate;overflow:hidden;min-height:0;background:#151517;color:#fff;border:1px solid rgba(255,255,255,.15);box-shadow:14px 15px 0 #18181b;transition:border-color .25s,transform .25s}
-.hero-story:hover{border-color:var(--red2);transform:translateY(-2px)}
+.hero-story{display:block;position:relative;isolation:isolate;overflow:hidden;min-height:0;background:#151517;color:#fff;border:0;box-shadow:none;transition:transform .25s}
+.hero-story:hover{transform:translateY(-2px)}
 .hero-story img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:saturate(.86);transition:transform .45s}
 .hero-story:hover img{transform:scale(1.045)}
 .hero-story:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,.04) 31%,rgba(0,0,0,.8) 97%);pointer-events:none}
@@ -45,4 +45,4 @@
 @media(min-width:1650px){.hero-stories{height:600px}}
 @media(max-width:1180px){.hero-stories{height:485px}.hero-story-words strong{font-size:clamp(42px,5.2vw,63px)}}
 @media(max-width:850px){.hero-media{padding:8px 10px 45px}.hero-stories{height:550px}.hero-story-words strong{font-size:clamp(52px,8vw,78px)}}
-@media(max-width:560px){.hero-media{padding:10px 0 35px}.hero-stories{height:455px;gap:11px}.hero-story{box-shadow:7px 8px 0 #18181b}.hero-story-head{left:15px;right:15px;top:13px;font-size:8px}.hero-story-words{left:15px;right:15px;bottom:14px;gap:5px}.hero-story-words strong{font-size:clamp(39px,10vw,57px)}.hero-story-kicker{font-size:8px}.hero-story-cta{font-size:9px;margin-top:4px}}
+@media(max-width:560px){.hero-media{padding:10px 0 35px}.hero-stories{height:455px;gap:11px}.hero-story{box-shadow:none}.hero-story-head{left:15px;right:15px;top:13px;font-size:8px}.hero-story-words{left:15px;right:15px;bottom:14px;gap:5px}.hero-story-words strong{font-size:clamp(39px,10vw,57px)}.hero-story-kicker{font-size:8px}.hero-story-cta{font-size:9px;margin-top:4px}}
