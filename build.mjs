@@ -62,13 +62,15 @@ const copy = p => {
     if (!externalDataScript.test(html)) throw new Error(`Gallery data script missing from ${p}`);
     const current = html.replace(externalDataScript, inlineGalleryData)
       .replace(/app\.js\?v=[^"]+/g, `app.js?v=${assetVersion('app.js')}`)
-      .replace(/styles\.css\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`);
+      .replace(/styles\.css\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`)
+      .replace(/concerts\.js\?v=[^"]+/g, `concerts.js?v=${assetVersion('concerts.js')}`)
+      .replace(/concerts\.css\?v=[^"]+/g, `concerts.css?v=${assetVersion('concerts.css')}`);
     fs.writeFileSync(destination, current);
   } else {
     fs.copyFileSync(path.join(root, p), destination);
   }
 };
-['index.html', 'portfolio.html', 'event.html', 'styles.css', 'app.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
+['index.html', 'portfolio.html', 'event.html', 'concerts.html', 'concert-event.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
 let count = 0;
 for (const event of publicEvents) {
   for (const image of [event.cover, ...event.gallery]) {
