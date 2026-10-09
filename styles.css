@@ -84,9 +84,9 @@
 /* Keep the lower half of cover photographs in frame across the homepage and archive. */
 .hero-story-main img{object-position:center 40%}
 .hero-story-side img{object-position:center 38%}
-.project-cover img{object-position:center 2%}
+.project-cover img{object-position:center 38%}
 .feature-artwork .feature-photo{object-fit:cover;object-position:center 32%;background:none}
 
-/* Lift the Byron Nelson portfolio cover by 5% while keeping the card filled. */
-.project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:translateY(-16%) scale(1.12);transform-origin:center center}
-.project-card:hover .project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:translateY(-16%) scale(1.16)}
+/* Byron Nelson portfolio: shift crop UP inside its fixed cover frame, retaining the whole head. */
+body[data-page="portfolio"] .project-cover img[src*="byron-nelson-volleyball-media-day/"]{object-fit:cover;object-position:center 30%;transform:none}
+body[data-page="portfolio"] .project-card:hover .project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:scale(1.04)}
