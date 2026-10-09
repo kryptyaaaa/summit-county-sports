@@ -7,6 +7,25 @@
   const imageSrc=x=>url(x);
   const extURL=x=>/^https:\/\//.test(String(x||''))?x:'';
   const instagramEmbed=x=>{const m=extURL(x).match(/^https:\/\/(?:www\.)?instagram\.com\/(p|reel|tv)\/([A-Za-z0-9_-]+)(?:\/|\?|$)/i);return m?'https://www.instagram.com/'+m[1]+'/'+m[2]+'/embed/':''};
+  // Support reliable in-page playback from YouTube or Vimeo, while retaining Instagram previews.
+  const videoEmbed=x=>{
+    const s=extURL(x);if(!s)return '';
+    try{
+      const u=new URL(s),h=u.hostname.toLowerCase().replace(/^www\./,'');
+      let id='';
+      if(h==='youtu.be')id=u.pathname.split('/')[1]||'';
+      else if(h==='youtube.com'||h==='m.youtube.com'||h==='youtube-nocookie.com'){
+        const bits=u.pathname.split('/').filter(Boolean);
+        id=bits[0]==='watch'?u.searchParams.get('v')||'':['shorts','embed','live'].includes(bits[0])?bits[1]||'':'';
+      }
+      if(/^[a-zA-Z0-9_-]{11}$/.test(id))return 'https://www.youtube-nocookie.com/embed/'+id+'?rel=0&playsinline=1';
+      if(h==='vimeo.com'||h==='player.vimeo.com'){
+        const n=u.pathname.split('/').filter(Boolean).pop();
+        if(/^\d+$/.test(n))return 'https://player.vimeo.com/video/'+n;
+      }
+    }catch(_){/* Preserve the Instagram fallback. */}
+    return instagramEmbed(s);
+  };
   const pageHref=e=>'event.html?slug='+encodeURIComponent(e.slug);
   const preview=e=>imageSrc(e.cover)||e.gallery.map(imageSrc).find(Boolean)||'';
   const eDate=e=>{if(!e.event_date)return '';const dt=new Date(e.event_date+'T12:00:00');return Number.isNaN(dt.getTime())?'':dt.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})};
@@ -27,17 +46,17 @@
       Number(b.slug==='byron-nelson-volleyball-media-day')-Number(a.slug==='byron-nelson-volleyball-media-day'));
     if(target){
       target.innerHTML=(featured.length?featured:events.slice(0,1)).map(e=>{
-        const cover=preview(e),embed=instagramEmbed(e.video_url);
+        const cover=preview(e),embed=videoEmbed(e.video_url);
         const artwork=embed
-          ?`<div class="feature-artwork feature-video-artwork"><iframe class="ig-embed" src="${esc(embed)}" title="Watch ${esc(e.title)} on Instagram" loading="lazy" allowfullscreen></iframe></div>`
+          ?`<div class="feature-artwork feature-video-artwork"><iframe class="ig-embed" src="${esc(embed)}" title="Watch ${esc(e.title)} video" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>`
           :`<div class="feature-artwork">${cover?`<img class="feature-photo" src="${esc(cover)}" alt="${esc(e.title)} cover photo" loading="lazy"><div class="feature-overlay"></div>`:`<span class="graphic-large">${esc(abbreviation(e))}</span>`}<div class="graphic-corner">FEATURED COVERAGE / SCS</div><span class="graphic-caption">${esc(e.title)}</span><div class="graphic-credit">${cover?esc(e.photographer||'SUMMIT COUNTY SPORTS'):'PHOTOS BEING ADDED'}</div></div>`;
-        const info=`<div class="feature-description"><span class="tag">FEATURED / ${esc(e.category||'COVERAGE')}</span><h3>${esc(e.title)}</h3><p>${esc(e.summary||'Explore the story, the people, and the moments behind this event.')}</p><a class="arrow-link" href="${pageHref(e)}">${embed?'WATCH THE FEATURE':e.gallery.length?'VIEW THE GALLERY':'VIEW PROJECT DETAILS'} ↗</a>${embed?`<a class="arrow-link video-external-link" href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH ON INSTAGRAM ↗</a>`:''}</div>`;
+        const info=`<div class="feature-description"><span class="tag">FEATURED / ${esc(e.category||'COVERAGE')}</span><h3>${esc(e.title)}</h3><p>${esc(e.summary||'Explore the story, the people, and the moments behind this event.')}</p><a class="arrow-link" href="${pageHref(e)}">${embed?'WATCH THE FEATURE':e.gallery.length?'VIEW THE GALLERY':'VIEW PROJECT DETAILS'} ↗</a>${embed?`<a class="arrow-link video-external-link" href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH AT SOURCE ↗</a>`:''}</div>`;
         return `<article class="featured-project">${artwork}${info}</article>`;
       }).join('');
     }
   }
   // Portfolio cards and quick category navigation.
-  const card=e=>{const cover=preview(e);const count=(e.gallery||[]).filter(imageSrc).length;const video=!!instagramEmbed(e.video_url);
+  const card=e=>{const cover=preview(e);const count=(e.gallery||[]).filter(imageSrc).length;const video=!!videoEmbed(e.video_url);
     const bottom=video?'WATCH VIDEO':count?`${count} PHOTOS`:extURL(e.external_url)?'LIGHTROOM ALBUM AVAILABLE':'PHOTOS COMING SOON';
     const artwork=cover?`<img loading="lazy" src="${esc(cover)}" alt="${esc(e.title)}">`:video?'<span class="video-poster-mark" aria-hidden="true">▶</span>':`<span class="placeholder-mark" aria-hidden="true">${esc(abbreviation(e))}</span>`;
     return `<a class="project-card" href="${pageHref(e)}"><div class="project-cover">${artwork}<span class="project-corner">SCS / ${esc(e.category||'COVERAGE')}</span><span class="project-bottom">${bottom} ↗</span></div><div class="project-meta"><b>${esc(e.category||'EVENT')}</b><span>${esc(eDate(e)||e.location||'EVENT COVERAGE')}</span></div><h3>${esc(e.title)}</h3><p>${esc((e.summary||'').length>134?e.summary.slice(0,131)+'...':e.summary||'View this event in the Summit County Sports archive.')}</p></a>`};
@@ -52,10 +71,10 @@
     const slug=new URLSearchParams(location.search).get('slug');const e=events.find(e=>e.slug===slug);const heading=document.getElementById('event-heading'), gallery=document.getElementById('event-gallery'), links=document.getElementById('event-links');
     if(!e){heading.innerHTML='<p class="detail-category">PROJECT NOT FOUND</p><h1>THIS GALLERY ISN\'T PUBLISHED.</h1><a class="under-link" href="portfolio.html">VIEW PUBLISHED WORK ↗</a>';return;}
     document.title=e.title+' — Summit County Sports';
-    heading.innerHTML=`<p class="detail-category">${esc(e.category)} / SCS EVENT COVERAGE</p><h1>${esc(e.title)}</h1><div class="detail-info">${e.location?`<span>LOCATION / ${esc(e.location)}</span>`:''}${eDate(e)?`<span>DATE / ${esc(eDate(e))}</span>`:''}<span>MEDIA / ${esc(e.photographer||'Summit County Sports')}</span>${instagramEmbed(e.video_url)?'<span>VIDEO / STUDENT SECTION FILM</span>':''}${e.gallery.length?`<span>PHOTOS / ${e.gallery.length}</span>`:''}</div><p class="detail-summary">${esc(e.summary||'Photography and event coverage by Summit County Sports.')}</p>`;
+    heading.innerHTML=`<p class="detail-category">${esc(e.category)} / SCS EVENT COVERAGE</p><h1>${esc(e.title)}</h1><div class="detail-info">${e.location?`<span>LOCATION / ${esc(e.location)}</span>`:''}${eDate(e)?`<span>DATE / ${esc(eDate(e))}</span>`:''}<span>MEDIA / ${esc(e.photographer||'Summit County Sports')}</span>${videoEmbed(e.video_url)?'<span>VIDEO / STUDENT SECTION FILM</span>':''}${e.gallery.length?`<span>PHOTOS / ${e.gallery.length}</span>`:''}</div><p class="detail-summary">${esc(e.summary||'Photography and event coverage by Summit County Sports.')}</p>`;
     const images=(e.gallery||[]).map(imageSrc).filter(Boolean);
-    const embeddedVideo=instagramEmbed(e.video_url);
-    const videoHtml=embeddedVideo?`<div class="event-video"><iframe class="ig-embed" src="${esc(embeddedVideo)}" title="Watch ${esc(e.title)} on Instagram" loading="lazy" allowfullscreen></iframe><a href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH ON INSTAGRAM ↗</a></div>`:'';
+    const embeddedVideo=videoEmbed(e.video_url);
+    const videoHtml=embeddedVideo?`<div class="event-video"><iframe class="ig-embed" src="${esc(embeddedVideo)}" title="Watch ${esc(e.title)} video" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><a href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH AT SOURCE ↗</a></div>`:'';
     const photoHtml=images.length?images.map((src,i)=>`<button class="gallery-item" type="button" data-image="${i}" aria-label="Enlarge photo ${i+1} of ${images.length}"><img src="${esc(src)}" loading="lazy" alt="${esc(e.title)} — photo ${i+1}"></button>`).join(''):embeddedVideo?'':`<div class="gallery-empty"><strong>${extURL(e.external_url)?'VIEW THE LIGHTROOM ALBUM BELOW.':'THE PHOTOS ARE ON THEIR WAY.'}</strong><p>${extURL(e.external_url)?'The shared photo album is linked below. Images will appear directly on Summit County Sports after the web-ready files are imported.':'This project is in the archive, but its full photo gallery hasn\'t been uploaded yet. Check back for new coverage.'}</p></div>`;
     gallery.innerHTML=videoHtml+photoHtml;
     const external=[['WATCH VIDEO ↗',extURL(e.video_url)],[String(e.external_url||'').includes('adobe.ly/')?'VIEW LIGHTROOM ALBUM ↗':'VIEW ADDITIONAL COVERAGE ↗',extURL(e.external_url)]].filter(x=>x[1]);links.innerHTML=external.map(([name,link])=>`<a class="btn" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${name}</a>`).join('');
