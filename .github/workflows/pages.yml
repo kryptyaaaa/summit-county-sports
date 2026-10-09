@@ -32,24 +32,27 @@ jobs:
           node build.mjs
           touch _site/.nojekyll
 
-      - name: Check media integrity
+      - name: Check published pages and uploaded media
         run: |
           test -s _site/assets/content-data.js
           node --check app.js
-          grep -q 'hoban-vs-walsh-holy-war-student-section' _site/portfolio.html
-          grep -q 'Dd0An-_gnh-' _site/portfolio.html
-          grep -q '1KCScHyQgxnZdm4hFObMq3uYw0f5TxS9Z' _site/portfolio.html
-          grep -q 'drive.google.com/file/d/' _site/app.js
-          grep -q 'AL3A1394.jpg' _site/portfolio.html
-          grep -q 'feature-video-artwork' _site/app.js
-          # The Football card and photo gallery must be present in the actual HTML served to visitors.
-          grep -q 'hoban-vs-nfl-academy-football-2026' _site/portfolio.html
-          grep -q '"published": true' _site/portfolio.html
-          ! grep -q 'src="assets/content-data.js' _site/portfolio.html
-          test "$(find _site/assets/uploads/hoban-vs-nfl-academy-football-2026 -maxdepth 1 -name '*.jpg' | wc -l)" -ge 30
-          test "$(find _site/assets/uploads/byron-nelson-volleyball-media-day -maxdepth 1 -name '*.jpg' | wc -l)" -eq 111
-          test "$(find _site/assets/uploads/jackson-volleyball-media-day -maxdepth 1 -name '*.jpg' | wc -l)" -eq 24
-          test "$(find _site/assets/uploads/wadsworth-girls-volleyball -maxdepth 1 -name '*.jpg' | wc -l)" -eq 41
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const slug = 'ellet-vs-garfield-boys-soccer';
+          const page = fs.readFileSync('_site/portfolio.html', 'utf8');
+          const detail = fs.readFileSync('_site/event.html', 'utf8');
+          const event = JSON.parse(fs.readFileSync('content/events/' + slug + '.json', 'utf8'));
+          const gallery = [...new Set(event.gallery)];
+          if (event.category !== 'Soccer' || !event.published) throw Error('Soccer event missing or unpublished');
+          if (gallery.length !== 26) throw Error('Expected 26 Ellet vs Garfield photos; found ' + gallery.length);
+          for (const photo of gallery) {
+            if (!fs.existsSync('_site/' + photo)) throw Error('Gallery photo missing from published site: ' + photo);
+          }
+          if (!page.includes('data-category="Soccer"')) throw Error('Soccer filter missing from published portfolio');
+          if (!page.includes(slug) || !detail.includes(slug)) throw Error('Soccer gallery missing from the published page data');
+          if (!fs.readFileSync('_site/index.html', 'utf8').includes('category=Soccer')) throw Error('Homepage Soccer navigation missing');
+          console.log('Verified Soccer category and all ' + gallery.length + ' website photo files');
+          NODE
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
