@@ -106,3 +106,6 @@ body[data-page="portfolio"] .project-card:hover .project-cover img[src*="byron-n
   body[data-page="portfolio"] .project-cover img[src*="ellet-vs-garfield-boys-soccer/"]{object-fit:cover;object-position:center 68%;transform:none}
   body[data-page="portfolio"] .project-card:hover .project-cover img[src*="ellet-vs-garfield-boys-soccer/"]{transform:scale(1.04)}
 }
+
+/* Center the Saint V vs VASJ cover on the play at desktop and mobile sizes. */
+body[data-page="portfolio"] .project-cover img[src*="stvm-vs-vasj-football/"]{object-position:center 68%}
