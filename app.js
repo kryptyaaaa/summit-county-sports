@@ -19,6 +19,12 @@
         id=bits[0]==='watch'?u.searchParams.get('v')||'':['shorts','embed','live'].includes(bits[0])?bits[1]||'':'';
       }
       if(/^[a-zA-Z0-9_-]{11}$/.test(id))return 'https://www.youtube-nocookie.com/embed/'+id+'?rel=0&playsinline=1';
+      // Google Drive allows an in-page file preview player when sharing permits access.
+      if(h==='drive.google.com'){
+        const parts=u.pathname.split('/').filter(Boolean);
+        const fileId=parts[0]==='file'&&parts[1]==='d'?parts[2]:u.searchParams.get('id');
+        if(fileId&&/^[a-zA-Z0-9_-]{10,}$/.test(fileId))return 'https://drive.google.com/file/d/'+fileId+'/preview';
+      }
       if(h==='vimeo.com'||h==='player.vimeo.com'){
         const n=u.pathname.split('/').filter(Boolean).pop();
         if(/^\d+$/.test(n))return 'https://player.vimeo.com/video/'+n;
