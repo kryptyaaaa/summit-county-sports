@@ -80,3 +80,9 @@
 .concert-bridge-button span:last-child{font-size:22px;line-height:1}
 @media(max-width:850px){.primary-nav .nav-concert-cta{margin-top:9px;justify-content:space-between}.concert-bridge-inner{flex-wrap:wrap}.concert-bridge-button{min-width:0;width:min(100%,440px)}}
 @media(max-width:560px){.hero-concert-link{margin-top:14px}.hero-concert-link strong{font-size:10px}.concert-bridge-inner{padding:29px 0}.concert-bridge h2{font-size:clamp(39px,10vw,55px)}.concert-bridge-button{font-size:10px}}
+
+/* Keep the lower half of cover photographs in frame across the homepage and archive. */
+.hero-story-main img{object-position:center 78%}
+.hero-story-side img{object-position:center 65%}
+.project-cover img{object-position:center 70%}
+.feature-artwork .feature-photo{object-position:center 70%}
