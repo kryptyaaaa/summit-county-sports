@@ -46,3 +46,14 @@
 @media(max-width:1180px){.hero-stories{height:485px}.hero-story-words strong{font-size:clamp(42px,5.2vw,63px)}}
 @media(max-width:850px){.hero-media{padding:8px 10px 45px}.hero-stories{height:550px}.hero-story-words strong{font-size:clamp(52px,8vw,78px)}}
 @media(max-width:560px){.hero-media{padding:10px 0 35px}.hero-stories{height:455px;gap:11px}.hero-story{box-shadow:none}.hero-story-head{left:15px;right:15px;top:13px;font-size:8px}.hero-story-words{left:15px;right:15px;bottom:14px;gap:5px}.hero-story-words strong{font-size:clamp(39px,10vw,57px)}.hero-story-kicker{font-size:8px}.hero-story-cta{font-size:9px;margin-top:4px}}
+
+
+/* Contact options: native in-page disclosure works without an email client or JavaScript. */
+.contact-picker{width:min(100%,400px)}
+.contact-picker>summary{list-style:none;cursor:pointer;width:100%;user-select:none}
+.contact-picker>summary::-webkit-details-marker{display:none}
+.contact-picker>summary:focus-visible{outline:3px solid var(--red2);outline-offset:4px}
+.contact-picker[open]>.contact-cta{background:#fff;color:#121212}
+.contact-methods{display:grid;gap:8px;margin-top:14px}
+.contact-methods a{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 17px;background:#1e1e21;border:1px solid #3b3b40;color:#fff;font-size:10px;font-weight:800;letter-spacing:.08em;transition:background .2s,border-color .2s}
+.contact-methods a:hover,.contact-methods a:focus-visible{background:#303034;border-color:var(--red2)}
