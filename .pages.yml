@@ -36,6 +36,12 @@ content:
       - name: location
         label: Location
         type: string
+      - name: artist
+        label: Artist / Performer (for concerts)
+        type: string
+      - name: venue
+        label: Concert Venue (for concerts)
+        type: string
       - name: short_label
         label: Small headline / label
         type: string
