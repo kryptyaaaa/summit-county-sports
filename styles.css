@@ -57,3 +57,26 @@
 .contact-methods{display:grid;gap:8px;margin-top:14px}
 .contact-methods a{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 17px;background:#1e1e21;border:1px solid #3b3b40;color:#fff;font-size:10px;font-weight:800;letter-spacing:.08em;transition:background .2s,border-color .2s}
 .contact-methods a:hover,.contact-methods a:focus-visible{background:#303034;border-color:var(--red2)}
+
+/* Prominent concert-brand switcher, accessible as a standard link. */
+.primary-nav .nav-concert-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 12px;border:1px solid #fd71864a;color:#ff8ba3;background:linear-gradient(125deg,#24101c,#391526);border-radius:2px}
+.primary-nav .nav-concert-cta:hover,.primary-nav .nav-concert-cta:focus-visible{color:#fff;background:#83334d;border-color:#ff9ab0}
+.hero-concert-link{width:min(100%,455px);display:flex;align-items:center;gap:13px;margin-top:21px;padding:13px 15px;background:#221322;border:1px solid #af4c75;color:#fff;transition:background .2s,border-color .2s,transform .2s}
+.hero-concert-link:hover{background:#3e1b37;border-color:#ff708c;transform:translateY(-2px)}
+.hero-concert-icon{width:38px;height:38px;flex-shrink:0;display:grid;place-items:center;background:#ff5978;color:#1c0814;font-size:24px}
+.hero-concert-link>span:nth-child(2){display:flex;flex-direction:column;gap:5px}
+.hero-concert-link small{color:#f4a9be;font-size:8px;font-weight:900;letter-spacing:.15em}
+.hero-concert-link strong{font-size:11px;font-weight:900;letter-spacing:.07em}
+.hero-concert-arrow{margin-left:auto;font-size:22px;color:#ff879d}
+.concert-bridge{background:linear-gradient(116deg,#150e19 0%,#39152a 58%,#5f213e 100%);border-top:1px solid #7b3455;border-bottom:1px solid #7b3455;position:relative;overflow:hidden}
+.concert-bridge:before{content:'';position:absolute;right:-95px;top:-140px;width:420px;height:420px;border:1px solid #ffffff1f;border-radius:50%;box-shadow:0 0 0 50px #ffffff05,0 0 0 130px #ffffff05;pointer-events:none}
+.concert-bridge-inner{position:relative;display:flex;justify-content:space-between;align-items:center;gap:35px;padding:38px 0}
+.concert-bridge-kicker{display:block;margin-bottom:12px;font-size:10px;font-weight:900;letter-spacing:.16em;color:#ff93ac}
+.concert-bridge h2{margin:0 0 12px;font:900 clamp(35px,4vw,61px)/.9 var(--display);letter-spacing:.003em}
+.concert-bridge h2 em{font-style:normal;color:#ff6988}
+.concert-bridge p{color:#e6cdda;max-width:510px;font-size:12px;line-height:1.7;margin:0}
+.concert-bridge-button{display:flex;align-items:center;justify-content:space-between;gap:25px;min-width:285px;min-height:61px;padding:17px 20px;background:#ff5c7b;color:#1e0713;font-size:11px;font-weight:900;letter-spacing:.06em;transition:transform .2s,background .2s}
+.concert-bridge-button:hover{background:#fff;transform:translateY(-2px)}
+.concert-bridge-button span:last-child{font-size:22px;line-height:1}
+@media(max-width:850px){.primary-nav .nav-concert-cta{margin-top:9px;justify-content:space-between}.concert-bridge-inner{flex-wrap:wrap}.concert-bridge-button{min-width:0;width:min(100%,440px)}}
+@media(max-width:560px){.hero-concert-link{margin-top:14px}.hero-concert-link strong{font-size:10px}.concert-bridge-inner{padding:29px 0}.concert-bridge h2{font-size:clamp(39px,10vw,55px)}.concert-bridge-button{font-size:10px}}
