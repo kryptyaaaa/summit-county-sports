@@ -72,7 +72,7 @@ const copy = p => {
     fs.copyFileSync(path.join(root, p), destination);
   }
 };
-['index.html', 'portfolio.html', 'event.html', 'concerts.html', 'concert-event.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
+['index.html', 'portfolio.html', 'event.html', 'team.html', 'concerts.html', 'concert-event.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
 let count = 0;
 for (const event of publicEvents) {
   for (const image of [event.cover, ...event.gallery]) {

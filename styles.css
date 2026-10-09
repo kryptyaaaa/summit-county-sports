@@ -112,3 +112,51 @@ body[data-page="portfolio"] .project-cover img[src*="stvm-vs-vasj-football/"]{ob
 
 /* Keep the Hoban vs Walsh cover centered on the ball carrier. */
 body[data-page="portfolio"] .project-cover img[src*="hoban-vs-walsh-football-2025-26/"]{object-position:center 68%}
+
+
+/* Team / social portfolio directory */
+@media (min-width:851px) and (max-width:1220px){
+  .primary-nav{gap:clamp(12px,1.6vw,22px)}
+  .primary-nav a{font-size:10px;letter-spacing:.055em}
+  .primary-nav .nav-action{min-width:0;padding:17px 14px}
+  .brand>span{font-size:17px}.brand strong{font-size:27px}
+}
+.team-home-link{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;margin-top:15px;padding:15px 18px;border:1px solid #b02b38;color:#fff;font-size:11px;font-weight:900;letter-spacing:.10em;width:max-content;max-width:100%;transition:background .2s}
+.team-home-link span{color:var(--red2);font-size:19px}.team-home-link:hover{background:#84252b}
+.team-hero{position:relative;overflow:hidden;background:radial-gradient(ellipse at 84% 14%,#371016 0%,transparent 55%),#0b0b0d;border-bottom:1px solid #333338}
+.team-hero:after{content:"";position:absolute;inset:0;opacity:.23;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 94px,#ffffff0b 95px 96px)}
+.team-hero-inner{position:relative;z-index:1;padding-top:90px;padding-bottom:60px}
+.team-hero h1{font-family:var(--display);font-weight:900;font-size:clamp(85px,10vw,161px);letter-spacing:-.03em;line-height:.79;max-width:1100px;margin:46px 0 56px}
+.team-hero h1>span{color:transparent;-webkit-text-stroke:1.4px #f5f4f2}
+.team-hero-bottom{display:flex;justify-content:space-between;gap:35px;align-items:end;border-top:1px solid #515155;padding-top:27px}
+.team-hero-bottom p{font-size:15px;line-height:1.75;color:#c9c6c6;max-width:550px;margin:0}
+.team-hero-bottom>span{font-size:10px;letter-spacing:.12em;font-weight:800;color:#969398;text-align:right}
+.team-section{background:var(--off);color:var(--ink);padding:100px 0 120px}
+.team-section-heading{display:flex;align-items:end;justify-content:space-between;gap:55px;margin:38px 0 47px}
+.team-section-heading h2{margin:0;font-family:var(--display);font-size:clamp(73px,8vw,126px);font-weight:900;line-height:.8;letter-spacing:-.025em}
+.team-section-heading h2 em{color:var(--red);font-style:normal}
+.team-section-heading p{color:#5a575b;max-width:375px;line-height:1.8;font-size:14px;margin:0}
+.team-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.team-card{position:relative;display:flex;flex-direction:column;justify-content:space-between;background:#121215;color:#f7f6f5;min-height:420px;padding:24px 26px 27px;overflow:hidden;border:1px solid #27272a;isolation:isolate}
+.team-card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--red)}
+.team-card-featured{grid-column:span 2;background:linear-gradient(120deg,#200d11,#121215 65%)}
+.team-card-top{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:10px;font-weight:900;letter-spacing:.12em;color:#a3a0a3}
+.team-card-plus{color:var(--red);font-size:22px;line-height:1}
+.team-card-monogram{position:absolute;right:15px;top:35px;font:900 clamp(120px,18vw,240px)/1 var(--display);color:#ffffff08;letter-spacing:-.08em;pointer-events:none;user-select:none;z-index:-1}
+.team-card-featured .team-card-monogram{color:#e1242e19}
+.team-card-body{position:relative;padding-top:130px}
+.team-card-role{font-size:10px;font-weight:900;letter-spacing:.16em;color:var(--red2);margin:0 0 13px}
+.team-card h3{font-family:var(--display);font-weight:900;font-size:clamp(30px,3.1vw,47px);letter-spacing:-.01em;line-height:1;overflow-wrap:anywhere;margin:0 0 8px}
+.team-card-handle{font-size:13px;color:#b8b5bb;overflow-wrap:anywhere;margin:0 0 33px}
+.team-card-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:16px;border-top:1px solid #4b4447;font-size:11px;font-weight:900;letter-spacing:.12em;transition:color .2s}
+.team-card-link span:last-child{font-size:21px;color:var(--red2)}
+.team-card-link:hover{color:var(--red2)}
+.team-contact{background:#0c0c0e;padding:78px 0 90px}
+.team-contact-inner{display:flex;align-items:end;justify-content:space-between;gap:40px}
+.team-contact-eyebrow{font-size:10px;font-weight:900;letter-spacing:.17em;color:#ee626a}
+.team-contact h2{font:900 clamp(56px,7vw,102px)/.88 var(--display);margin:17px 0 22px}
+.team-contact h2 em{color:var(--red);font-style:normal}
+.team-contact p{color:#b6b3b6;font-size:14px;line-height:1.7;margin:0}
+.team-contact .btn{flex-shrink:0}
+@media(max-width:970px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-card-featured{grid-column:span 2}.team-hero h1{font-size:clamp(76px,10vw,125px)}}
+@media(max-width:600px){.team-hero-inner{padding-top:65px;padding-bottom:36px}.team-hero h1{font-size:clamp(65px,13vw,95px);margin:37px 0 40px}.team-hero-bottom{display:block}.team-hero-bottom>span{display:block;text-align:left;margin-top:19px}.team-hero-bottom p{font-size:13px}.team-section{padding:66px 0 80px}.team-section-heading{display:block;margin:30px 0}.team-section-heading h2{font-size:clamp(69px,14vw,92px);margin-bottom:22px}.team-section-heading p{font-size:13px}.team-grid{grid-template-columns:1fr}.team-card,.team-card-featured{grid-column:auto;min-height:370px}.team-card-body{padding-top:100px}.team-card h3{font-size:clamp(37px,9vw,52px)}.team-contact{padding:64px 0}.team-contact-inner{display:block}.team-contact h2{font-size:clamp(55px,11vw,80px)}.team-contact .btn{margin-top:28px}.team-home-link{font-size:10px}}

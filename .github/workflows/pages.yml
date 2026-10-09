@@ -51,6 +51,12 @@ jobs:
           if (!page.includes('data-category="Soccer"')) throw Error('Soccer filter missing from published portfolio');
           if (!page.includes(slug) || !detail.includes(slug)) throw Error('Soccer gallery missing from the published page data');
           if (!fs.readFileSync('_site/index.html', 'utf8').includes('category=Soccer')) throw Error('Homepage Soccer navigation missing');
+          const team = fs.readFileSync('_site/team.html','utf8');
+          for (const handle of ['masontookem', 'flicks.by.scoot', 'visualsby_lue', 'framesby.nai', 'rmbcaptures']) {
+            if (!team.includes('https://www.instagram.com/' + handle + '/')) throw Error('Missing photographer Instagram: ' + handle);
+          }
+          if (!page.includes('href="team.html"')) throw Error('Team navigation missing from portfolio');
+          console.log('Verified photographer team page and all 5 Instagram links');
           console.log('Verified Soccer category and all ' + gallery.length + ' website photo files');
           NODE
 
