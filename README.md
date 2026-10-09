@@ -70,3 +70,9 @@ Concerts belong to the **Concerts** portfolio category (not "More"). The homepag
 For each real show, create one JSON file in `content/events/<artist-or-show>-<venue>-<date>.json`, using `category: "Concerts"`. Give it a clear `title`, `event_date` (YYYY-MM-DD), `location`, optional `artist` and `venue`, `photographer`, `summary`, and `auto_gallery: true`. Use `published: false` until images are ready, then publish. Set `featured: true` only if you want a homepage Spotlight card. Optional `video_url` supports YouTube, Vimeo, and Instagram links.
 
 Create an upload folder at `assets/uploads/<same-event-slug>/` (with a `.gitkeep` if it's empty) and upload edited JPG/WebP/PNG/AVIF photos there. The site build discovers them automatically. To choose a cover, set `cover` to an image path within that folder. The individual artist or venue does **not** need its own website or external hosting.
+
+## Summit County Concerts side page
+
+[Summit County Concerts](https://kryptyaaaa.github.io/summit-county-sports/concerts.html) is a branded, separate live-music portal within this same GitHub Pages deployment. Sports remain on `index.html` and `portfolio.html`; concert projects render only on `concerts.html` and use `concert-event.html?slug=<event-slug>` for galleries. The sports portfolio's older `?category=Concerts` links redirect to the new page.
+
+The page gets its content from the same `content/events/*.json` CMS collection (set `category: "Concerts"`). Include `artist`, `venue`, and `event_date` for each real event, plus `photographer`, `cover`, and `auto_gallery:true`. Upload images to `assets/uploads/<event-slug>/`, as with sports. No fake concert galleries are preloaded. `published:false` excludes a draft from the public pages. The live-music portal currently shares Summit County Sports' booking inbox until you specify a separate concerts email address.
