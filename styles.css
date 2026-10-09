@@ -18,3 +18,8 @@
 .event-video a{display:inline-block;color:white;font-weight:800;font-size:12px;letter-spacing:.12em;border-bottom:1px solid #e0202e;padding-bottom:8px}
 @media(max-width:850px){.feature-video-artwork{min-height:620px}.feature-video-artwork .ig-embed{height:620px;min-height:620px}}
 @media(max-width:560px){.event-video{padding:10px}.event-video .ig-embed{height:720px}.feature-video-artwork{min-height:650px}.feature-video-artwork .ig-embed{height:650px;min-height:650px}}
+
+/* Landscape Holy War film: keep the actual 736x480 aspect ratio. */
+.feature-video-artwork{min-height:0;aspect-ratio:736 / 480}
+.feature-video-artwork .ig-embed{width:100%;height:100%;min-height:0}
+.event-video .ig-embed{width:min(100%,900px);height:auto;aspect-ratio:736 / 480}
