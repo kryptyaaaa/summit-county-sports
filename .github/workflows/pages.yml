@@ -52,7 +52,7 @@ jobs:
           if (!page.includes(slug) || !detail.includes(slug)) throw Error('Soccer gallery missing from the published page data');
           if (!fs.readFileSync('_site/index.html', 'utf8').includes('category=Soccer')) throw Error('Homepage Soccer navigation missing');
           const team = fs.readFileSync('_site/team.html','utf8');
-          for (const handle of ['masontookem', 'flicks.by.scoot', 'visualsby_lue', 'framesby.nai', 'rmbcaptures']) {
+          for (const handle of ['masontookem', 'flics.by.scoot', 'visualsby_luie', 'framesby.nai', 'rmbcaptures']) {
             if (!team.includes('https://www.instagram.com/' + handle + '/')) throw Error('Missing photographer Instagram: ' + handle);
           }
           if (!page.includes('href="team.html"')) throw Error('Team navigation missing from portfolio');
