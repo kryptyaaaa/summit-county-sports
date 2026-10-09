@@ -85,4 +85,4 @@
 .hero-story-main img{object-position:center 40%}
 .hero-story-side img{object-position:center 38%}
 .project-cover img{object-position:center 70%}
-.feature-artwork .feature-photo{object-fit:contain;object-position:center top;background:#0b3163}
+.feature-artwork .feature-photo{object-fit:cover;object-position:center 32%;background:none}
