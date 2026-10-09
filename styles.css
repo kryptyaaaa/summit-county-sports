@@ -88,5 +88,5 @@
 .feature-artwork .feature-photo{object-fit:cover;object-position:center 32%;background:none}
 
 /* Lift the Byron Nelson portfolio cover by 5% while keeping the card filled. */
-.project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:translateY(-5%) scale(1.12);transform-origin:center center}
-.project-card:hover .project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:translateY(-5%) scale(1.16)}
+.project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:translateY(-16%) scale(1.12);transform-origin:center center}
+.project-card:hover .project-cover img[src*="byron-nelson-volleyball-media-day/"]{transform:translateY(-16%) scale(1.16)}
