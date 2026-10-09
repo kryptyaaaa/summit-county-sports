@@ -109,3 +109,6 @@ body[data-page="portfolio"] .project-card:hover .project-cover img[src*="byron-n
 
 /* Center the Saint V vs VASJ cover on the play at desktop and mobile sizes. */
 body[data-page="portfolio"] .project-cover img[src*="stvm-vs-vasj-football/"]{object-position:center 68%}
+
+/* Keep the Hoban vs Walsh cover centered on the ball carrier. */
+body[data-page="portfolio"] .project-cover img[src*="hoban-vs-walsh-football-2025-26/"]{object-position:center 68%}
