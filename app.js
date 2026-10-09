@@ -49,7 +49,7 @@
   if(document.body.dataset.page==='home'){
     const target=document.getElementById('featured-project');
     const featured=events.filter(e=>e.featured).sort((a,b)=>
-      Number(b.slug==='byron-nelson-volleyball-media-day')-Number(a.slug==='byron-nelson-volleyball-media-day'));
+      Number(b.slug==='hoban-vs-walsh-holy-war-student-section')-Number(a.slug==='hoban-vs-walsh-holy-war-student-section') || Number(b.slug==='byron-nelson-volleyball-media-day')-Number(a.slug==='byron-nelson-volleyball-media-day'));
     if(target){
       target.innerHTML=(featured.length?featured:events.slice(0,1)).map(e=>{
         const cover=preview(e),embed=videoEmbed(e.video_url);
