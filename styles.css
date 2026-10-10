@@ -202,3 +202,13 @@ body[data-page="portfolio"] .project-cover img[src*="hoban-vs-walsh-football-202
 .stories-archive{background:#f1efeb;color:#181618}
 @media(max-width:920px){.editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:590px){.event-story{padding:30px 20px;margin-bottom:35px;border-left-width:4px}.story-prose{font-size:14px}.story-top{font-size:9px}.story-byline{font-size:9px}.editorial-grid{grid-template-columns:1fr;gap:18px}.editorial-home-head{flex-direction:column;align-items:start}.editorial-image{height:195px}.stories-hero{padding:42px 0 48px}.stories-hero h1{font-size:clamp(79px,18vw,115px)}}
+
+
+/* Verified game highlights are editorially distinct from archival photo essays */
+.story-highlights{background:#211d20;color:#f7f4f3;padding:24px clamp(18px,3vw,35px) 25px;margin:0 0 27px;max-width:760px;border-top:4px solid #da3040}
+.story-highlights h3{font:900 clamp(27px,3.4vw,40px)/1 var(--display);letter-spacing:.035em;margin:0 0 20px}
+.story-highlights ol{list-style:none;padding:0;margin:0}
+.story-highlights li{display:flex;align-items:flex-start;gap:17px;padding:14px 0;border-top:1px solid #4b4346}
+.story-highlights li>span{color:#ff606b;font:900 24px/1 var(--display);flex-shrink:0}
+.story-highlights li p{color:#eee7e7;font-size:13px;line-height:1.7;margin:0}
+@media(max-width:590px){.story-highlights{padding:22px 18px}.story-highlights h3{font-size:28px}.story-highlights li{gap:12px}}
