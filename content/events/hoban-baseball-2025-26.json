@@ -1,10 +1,10 @@
 {
-  "title": "Archbishop Hoban — Baseball (2025–2026)",
+  "title": "Archbishop Hoban vs. Louisville — Baseball (2025–2026)",
   "category": "Baseball",
-  "event_date": "",
-  "location": "Akron, Ohio",
-  "short_label": "HOBAN KNIGHTS / 2025–2026 BASEBALL",
-  "summary": "Archbishop Hoban Knights baseball — photography and game coverage from the 2025–2026 high school season.",
+  "event_date": "2026-04-22",
+  "location": "Archbishop Hoban High School, Akron, Ohio",
+  "short_label": "HOBAN VS. LOUISVILLE / KNIGHTS 7 — LEOPARDS 2",
+  "summary": "Archbishop Hoban defeated Louisville 7–2 on April 22, 2026, completing a two-game sweep. Colt Andrews drove in four runs, and Matthew Ramsey struck out 10 in six innings. Original photography by Mason Bybee.",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/hoban-baseball-2025-26/AL3A3734.jpg",
   "gallery": [
@@ -24,8 +24,18 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "SEASON PHOTO ESSAY",
-  "article_headline": "A Season on the Diamond: Archbishop Hoban Baseball",
-  "article_dek": "A visual archive of the Knights’ 2025–26 baseball season.",
-  "article_body": "A baseball season is built from countless details: the concentration before a pitch, the quick exchanges between defenders and the movement of runners on the bases. Those moments matter beyond any single result.\n\nMason Bybee’s collection follows Archbishop Hoban baseball across the 2025–26 school year. This is a season-long photo essay, not a recap of one particular game."
+  "article_type": "GAME RECAP",
+  "article_headline": "Hoban Sweeps Louisville With 7–2 Victory Behind Andrews and Ramsey",
+  "article_dek": "Colt Andrews drives in four and Matthew Ramsey strikes out 10 as the Knights break the game open early in Akron.",
+  "article_body": "AKRON, Ohio — Archbishop Hoban completed a two-game baseball sweep of Louisville with a 7–2 home victory on Wednesday, April 22, 2026. The Knights made their move early, scoring three runs in both the first and second innings before adding an insurance run in the fourth.\n\nLouisville struck first with a run in the opening inning, but Hoban responded immediately. Ben Rovnak brought home a run on a fielder’s choice, Colt Andrews lined an RBI single to center, and Camacho doubled to drive in another. That response put the Knights ahead 3–1 after one inning.\n\nHoban scored three more in the second, with Andrews providing the key extra-base hit. His double helped push the Knights’ lead to 6–1. Andrews finished 2-for-4 with four RBIs, the biggest offensive contribution of the day. Grady Falkenstein added pressure on the bases with four steals, and Hoban finished with six stolen bases as a team.\n\nOn the mound, Matthew Ramsey kept Louisville from gaining traction. He worked six innings, striking out 10 and walking none while allowing five hits and two runs, only one earned. Ben Rovnak pitched the seventh to finish the win. Louisville’s Zander Triplett collected two hits, while Grayson Brunoni and Bryce Johnson had an RBI apiece.\n\nHoban had beaten the Leopards 2–1 on the road the previous day, so Wednesday’s victory completed the home-and-away sweep. The Knights improved to 8–3, while Louisville moved to 5–5, according to the published game recap and box score.\n\nThis Summit County Sports photo gallery features original baseball images by Mason Bybee. The game report and statistics are credited to Leopard Nation’s published recap, based on GameChanger scoring.",
+  "article_score": "HOBAN 7 — LOUISVILLE 2",
+  "article_highlights": [
+    "Hoban answered Louisville’s first-inning run with three of its own: Ben Rovnak brought in a run on a fielder’s choice, Colt Andrews singled home another, and Camacho followed with an RBI double.",
+    "Andrews added a two-run double in the second inning, helping the Knights extend the lead to 6–1.",
+    "Andrews went 2-for-4 with four RBIs; Grady Falkenstein stole four bases as Hoban stole six as a team.",
+    "Starting pitcher Matthew Ramsey worked six innings with 10 strikeouts and no walks, allowing five hits and two runs, one earned.",
+    "After Hoban’s 2–1 win at Louisville on April 21, the 7–2 home result completed a two-game sweep."
+  ],
+  "article_source_url": "https://louisvilleleopards.org/louisville-at-hoban-baseball-4-22-2026/",
+  "article_source_label": "Leopard Nation · April 22, 2026 game report and box score"
 }
