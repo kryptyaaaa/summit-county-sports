@@ -60,6 +60,13 @@ content:
       - name: article_score
         label: Verified Final Score
         type: string
+      - name: article_highlights
+        label: Key Plays and Highlights
+        type: list
+        field:
+          name: highlight
+          label: Verified highlight (one per entry)
+          type: string
       - name: article_body
         label: Article Body (blank lines separate paragraphs)
         type: text
