@@ -40,8 +40,16 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "PITCHSIDE FEATURE",
-  "article_headline": "Ellet vs. Garfield: Akron Soccer From the Touchline",
-  "article_dek": "The Orangemen and Rams featured in a pitchside boys soccer gallery.",
-  "article_body": "In soccer, the play can switch directions in an instant. A player’s first touch, a challenge near midfield or a chance in front of goal gives a photographer a moment to anticipate and capture.\n\nThis Ellet vs. Garfield gallery highlights the players and rhythm of an Akron high school matchup. Mason Bybee’s field-level images are presented as a visual feature without an unverified final score."
+  "article_type": "MATCHUP HISTORY / PHOTO FEATURE",
+  "article_headline": "Ellet vs. Garfield Soccer: An Akron Rivalry in Focus",
+  "article_dek": "Recent verified results tell a back-and-forth story, while the photographs preserve one match from the rivalry.",
+  "article_body": "AKRON, Ohio — Ellet and Garfield have met multiple times in boys soccer across the 2025 and 2026 fall seasons, with results going in both directions. Their rivalry provides a recurring stage for local players and schools.\n\nEllet won 5–0 on September 4, 2025, scoring three times in the first half and twice after the interval. Garfield got a 3–0 win in the teams' October 2 rematch. On October 1, 2026, Ellet earned a 2–1 victory.\n\nThose results describe the schools' recent matchup history and are not being assigned to the undated photographs on this page. Until the exact shoot date is confirmed, doing so would risk attaching the wrong score and player statistics to the images.\n\nMason Bybee's photo feature follows the athletes from the touchline. The historical scores above provide context while the gallery remains a visual record of the captured match.",
+  "article_highlights": [
+    "September 4, 2025: Ellet defeated Garfield 5–0 after scoring three goals in the first half and two in the second.",
+    "October 2, 2025: Garfield responded with a 3–0 win over Ellet. Ayden Bunn was recognized as Ellet's Player of the Match.",
+    "October 1, 2026: Ellet beat Garfield 2–1 in another closely contested meeting.",
+    "The archive photos have no verified game date attached; these are separate historical results, not an asserted score for the photographed match."
+  ],
+  "article_source_url": "https://www.maxpreps.com/oh/akron/ellet-orangement/soccer/schedule/",
+  "article_source_label": "MaxPreps · 2025 match schedule and results (2026 result corroborated by team page)"
 }
