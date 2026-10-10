@@ -212,3 +212,7 @@ body[data-page="portfolio"] .project-cover img[src*="hoban-vs-walsh-football-202
 .story-highlights li>span{color:#ff606b;font:900 24px/1 var(--display);flex-shrink:0}
 .story-highlights li p{color:#eee7e7;font-size:13px;line-height:1.7;margin:0}
 @media(max-width:590px){.story-highlights{padding:22px 18px}.story-highlights h3{font-size:28px}.story-highlights li{gap:12px}}
+
+/* High-visibility verified final score on editorial and gallery tiles */
+.editorial-final{display:block;color:#fff;background:#7f1d2b;border-left:3px solid #ff6474;padding:11px 12px;font:900 12px/1.35 var(--display);letter-spacing:.07em;margin:-3px 0 19px}
+.project-final-score{display:block;color:#c32838;font-weight:900;font-size:11px;letter-spacing:.04em;padding:0 0 8px;line-height:1.6}
