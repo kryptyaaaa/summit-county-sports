@@ -1,9 +1,9 @@
 {
   "title": "Archbishop Hoban vs. Walsh Jesuit — Football (2025–2026)",
   "category": "Football",
-  "event_date": "",
+  "event_date": "2025-09-26",
   "location": "Ohio",
-  "summary": "Archbishop Hoban Knights vs. Walsh Jesuit Warriors — Holy War football coverage from the 2025–2026 season. Photography by Mason Bybee.",
+  "summary": "The Knights erase a late deficit in the Holy War as Brayton Feister scores with 38 seconds remaining.",
   "short_label": "HOBAN VS. WALSH / 2025–2026 FOOTBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/hoban-vs-walsh-football-2025-26/AL3A1321.jpg",
@@ -13,10 +13,17 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "ARCHIVE RECAP",
-  "article_headline": "The Holy War: Hoban and Walsh Jesuit Renew Their Rivalry",
-  "article_dek": "An Ohio football rivalry with a competitive 2025 regular-season result.",
-  "article_body": "Archbishop Hoban defeated Walsh Jesuit 19–14 in their September 26, 2025 regular-season matchup, according to Walsh Jesuit’s published athletic schedule. The narrow result is another chapter in one of Northeast Ohio’s best-known school rivalries.\n\nThe score tells only part of the story. School pride, intensity on the field and the anticipation around each meeting shape the Holy War’s atmosphere. Mason Bybee’s gallery documents the players and moments from the rivalry.",
-  "article_source_url": "https://wjwarriors.com/sports/football-varsity/schedule/2025",
-  "article_source_label": "Walsh Jesuit Athletics · 2025 schedule"
+  "article_type": "GAME RECAP",
+  "article_headline": "Feister's Last-Minute Touchdown Lifts Hoban Past Walsh Jesuit, 19–14",
+  "article_dek": "The Knights erase a late deficit in the Holy War as Brayton Feister scores with 38 seconds remaining.",
+  "article_body": "AKRON, Ohio — Archbishop Hoban added another dramatic chapter to the Holy War on September 26, 2025, beating Walsh Jesuit 19–14 at Dowed Field. Hoban entered the final minutes trailing 14–13 before putting together a decisive drive.\n\nQuarterback Nick Kinsey connected with Jackson Callaway for a big late gain, and Brayton Feister finished the possession with a short touchdown run with 38 seconds left. Feister totaled 125 yards and two touchdowns on 14 carries, according to High School On SI's game report.\n\nWalsh had taken a 14–10 lead before Jeremy Hammel's fourth-quarter field goal cut the margin to one. The Warriors' last chance began deep in their own territory after a difficult kickoff return, and Hoban's defense preserved the lead. Jaiden Daniels recorded two interceptions, including a pivotal red-zone takeaway.\n\nThe game offered the kind of finish that defines a rivalry. Summit County Sports' gallery preserves a sideline look at the Knights and Warriors from the 2025 regular-season meeting.",
+  "article_source_url": "https://www.si.com/high-school/ohio/walsh-jesuit-vs-archbishop-hoban-live-score-updates-from-top-ohio-high-school-football-matchup-sept-26-2025-01k63gwm9b6j",
+  "article_source_label": "High School On SI · September 26, 2025 live recap",
+  "article_score": "HOBAN 19 — WALSH JESUIT 14",
+  "article_highlights": [
+    "Brayton Feister scored on a short run with 38 seconds left, turning a 14–13 Walsh lead into a 19–14 Hoban win.",
+    "Jackson Callaway made a crucial late reception from Nick Kinsey to advance the Knights to the Walsh 30 during the winning drive.",
+    "Feister rushed 14 times for 125 yards and two touchdowns; Jaiden Daniels intercepted two passes, including one in the red zone.",
+    "Walsh receiver Milan Parris caught a 29-yard touchdown from David Ternosky in the second quarter."
+  ]
 }

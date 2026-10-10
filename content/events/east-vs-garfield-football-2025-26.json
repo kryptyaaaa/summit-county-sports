@@ -1,9 +1,9 @@
 {
   "title": "East vs. Garfield — Football (2025–2026)",
   "category": "Football",
-  "event_date": "",
+  "event_date": "2025-10-24",
   "location": "Akron, Ohio",
-  "summary": "East Dragons vs. Garfield Rams — 2025–2026 high school football coverage in Akron, Ohio. Photography by Mason Bybee.",
+  "summary": "The Dragons finish an unbeaten league campaign with a city championship-clinching win.",
   "short_label": "EAST VS. GARFIELD / 2025–2026 FOOTBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/east-vs-garfield-football-2025-26/AL3A2507.jpg",
@@ -15,8 +15,16 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "ARCHIVE FEATURE",
-  "article_headline": "East vs. Garfield: City Football Through the Lens",
-  "article_dek": "The Dragons and Rams captured in a local football gallery.",
-  "article_body": "East and Garfield bring two Akron programs together for a matchup rooted in local high school football. Beyond the score, the story includes the players taking the field and the atmosphere surrounding them.\n\nThis gallery documents the competition through original photography by Mason Bybee. The photographs are preserved without attributing an unverified score or individual statistics."
+  "article_type": "GAME RECAP",
+  "article_headline": "East Beats Garfield 32–12 to Clinch Akron City Series Crown",
+  "article_dek": "The Dragons finish an unbeaten league campaign with a city championship-clinching win.",
+  "article_body": "AKRON, Ohio — East captured the 2025 Akron City Series championship with a 32–12 victory over Garfield on Friday, October 24. The Dragons ended the regular season with a perfect 5–0 league record and an 8–2 overall mark, as reported by Akron Public Schools.\n\nThis was more than another late-season game. East's win clinched the city title and secured a place in the OHSAA Division III, Region 9 playoffs. The Dragons built a 20-point winning margin in the rivalry contest.\n\nSummit County Sports' photography records the atmosphere and football action behind an important night for East's program. Verified team results are reported here without attributing unsourced touchdown plays.",
+  "article_score": "EAST 32 — GARFIELD 12",
+  "article_highlights": [
+    "East defeated Garfield 32–12 on October 24, 2025, to secure the Akron City Series championship.",
+    "The Dragons finished the regular season 8–2 overall and 5–0 in league competition.",
+    "East's 20-point win over the Rams secured an OHSAA Division III, Region 9 playoff berth, according to Akron Public Schools."
+  ],
+  "article_source_url": "https://www.akronschools.com/district/news/news-detail/~board/district-news/post/east-clc-football-team-secures-city-series-championship-and-ohsaa-playoff-berth",
+  "article_source_label": "Akron Public Schools · October 29, 2025 championship report"
 }

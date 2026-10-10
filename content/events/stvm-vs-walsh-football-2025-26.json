@@ -1,9 +1,9 @@
 {
   "title": "St. Vincent–St. Mary vs. Walsh Jesuit — Football (2025–2026)",
   "category": "Football",
-  "event_date": "",
+  "event_date": "2025-10-17",
   "location": "Ohio",
-  "summary": "St. Vincent–St. Mary Fighting Irish vs. Walsh Jesuit Warriors — 2025–2026 high school football game photography. Photography by Mason Bybee.",
+  "summary": "The Warriors score 44 before halftime and leave Akron with a 44-point win.",
   "short_label": "ST. V VS. WALSH / 2025–2026 FOOTBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/stvm-vs-walsh-football-2025-26/AL3A8906.jpg",
@@ -13,8 +13,16 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "ARCHIVE FEATURE",
-  "article_headline": "St. Vincent–St. Mary Meets Walsh Jesuit Under the Lights",
-  "article_dek": "A photographic look back at the Fighting Irish and Warriors on the football field.",
-  "article_body": "A high school football game is shaped by drives, defensive adjustments and sideline communication. When St. Vincent–St. Mary and Walsh Jesuit meet, those details become part of a Northeast Ohio football story.\n\nThe images in this gallery emphasize athletes in motion and reactions between plays. Mason Bybee’s photos serve as the primary account rather than an invented play sequence."
+  "article_type": "GAME RECAP",
+  "article_headline": "Walsh Jesuit Explodes in First Half, Defeats STVM 51–7",
+  "article_dek": "The Warriors score 44 before halftime and leave Akron with a 44-point win.",
+  "article_body": "AKRON, Ohio — Walsh Jesuit defeated St. Vincent–St. Mary 51–7 on October 17, 2025, using a dominant first half to put the result out of reach early.\n\nThe Warriors scored 14 in the first quarter and 30 in the second, building a 44–0 halftime lead. Walsh added another touchdown in the third before the Fighting Irish recorded their seven points in the fourth quarter.\n\nAlthough the Irish lost, the STVM athletics department singled out Geovonni Vinson's defensive play against Walsh in its end-of-season review. Summit County Sports' photo coverage records the action around the matchup.",
+  "article_score": "WALSH JESUIT 51 — STVM 7",
+  "article_highlights": [
+    "Walsh Jesuit led 14–0 after the first quarter and added 30 points in the second to take a 44–0 halftime advantage.",
+    "The Warriors added seven points in the third quarter; STVM scored its seven points in the fourth.",
+    "STVM's Geovonni Vinson was later highlighted by the school's athletics department for his defensive performance against Walsh."
+  ],
+  "article_source_url": "https://www.maxpreps.com/games/10-17-2025/football-25/st-vincent-st-mary-vs-walsh-jesuit.htm?c=YDRtuz5jw0utvZo4l64IBA",
+  "article_source_label": "MaxPreps · verified quarter-by-quarter score (STVM Athletics player recognition)"
 }

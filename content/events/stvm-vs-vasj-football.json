@@ -1,9 +1,9 @@
 {
   "title": "St. Vincent–St. Mary vs. VASJ — Football (2025–2026)",
   "category": "Football",
-  "event_date": "",
+  "event_date": "2025-09-19",
   "location": "Ohio",
-  "summary": "St. Vincent–St. Mary Fighting Irish vs. Villa Angela–St. Joseph Vikings — football coverage. Photography by Mason Bybee.",
+  "summary": "The Vikings take the September 2025 matchup; Rylan Hurley is noted for his work on both sides for the Irish.",
   "short_label": "ST. V VS. VASJ / FOOTBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/stvm-vs-vasj-football/AL3A4980.jpg",
@@ -13,8 +13,16 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "ARCHIVE FEATURE",
-  "article_headline": "St. Vincent–St. Mary vs. VASJ: Northeast Ohio Football",
-  "article_dek": "A sideline photo essay featuring the Fighting Irish and Vikings.",
-  "article_body": "St. Vincent–St. Mary and Villa Angela–St. Joseph are two Northeast Ohio school programs with their own sporting identities. Their football matchup provides a setting for athletes to compete and represent their communities.\n\nThis archive follows the players through Mason Bybee’s field-level images. It keeps the attention on the action and does not reconstruct an unverified final score."
+  "article_type": "GAME RECAP",
+  "article_headline": "VASJ Takes 37–7 Road Win Against St. Vincent–St. Mary",
+  "article_dek": "The Vikings take the September 2025 matchup; Rylan Hurley is noted for his work on both sides for the Irish.",
+  "article_body": "AKRON, Ohio — Villa Angela–St. Joseph defeated St. Vincent–St. Mary 37–7 on September 19, 2025. The Vikings put 37 points on the board while limiting the Fighting Irish to a single touchdown.\n\nDespite the loss, St. Vincent–St. Mary's athletics department later recognized Rylan Hurley's two-way performance against VASJ in its fall sports season review. Hurley's contributions were among the performances the program chose to highlight from the season.\n\nThe Summit County Sports gallery documents the matchup through Mason Bybee's sideline photographs. Specific touchdown descriptions have not been independently verified and are not attributed to individual players here.",
+  "article_score": "VASJ 37 — ST. VINCENT–ST. MARY 7",
+  "article_highlights": [
+    "Villa Angela–St. Joseph defeated St. Vincent–St. Mary 37–7 on September 19, 2025.",
+    "The Vikings' defense limited the Irish to one touchdown.",
+    "STVM singled out Rylan Hurley's work on offense and defense in its season review despite the loss."
+  ],
+  "article_source_url": "https://www.stvmathletics.com/fall-sports-highlights-the-season-in-review/",
+  "article_source_label": "STVM Athletics · fall sports season review (score also confirmed by Joe Eitel)"
 }

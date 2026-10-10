@@ -1,9 +1,9 @@
 {
   "title": "Buchtel vs. East — Football (2025–2026)",
   "category": "Football",
-  "event_date": "",
+  "event_date": "2025-10-18",
   "location": "Akron, Ohio",
-  "summary": "Buchtel vs. East — 2025–2026 high school football game coverage in Akron, Ohio. Photography by Mason Bybee.",
+  "summary": "A four-point finish and defensive resolve help the Dragons take a crucial October road win.",
   "short_label": "BUCHTEL VS. EAST / 2025–2026 FOOTBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/buchtel-vs-east-football-2025-26/AL3A0060.jpg",
@@ -13,8 +13,16 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "ARCHIVE FEATURE",
-  "article_headline": "Buchtel vs. East: An Akron Football Photo Story",
-  "article_dek": "A field-level look at the Griffins and Dragons from the 2025 football season.",
-  "article_body": "Buchtel and East represent two well-known Akron high school football communities. When the teams share a field, the players and their supporters bring the city’s sporting identity to the same stage.\n\nThis photographic archive captures the athletes and game-night energy through Mason Bybee’s sideline images. No specific score is attached because a verified game result has not been matched to this gallery."
+  "article_type": "GAME RECAP",
+  "article_headline": "East Holds Off Buchtel 12–8 in Akron City Series Battle",
+  "article_dek": "A four-point finish and defensive resolve help the Dragons take a crucial October road win.",
+  "article_body": "AKRON, Ohio — East defeated Buchtel 12–8 on October 18, 2025, in a tightly contested Akron City Series football meeting at Buchtel Stadium. The Dragons protected a four-point margin to secure an important victory late in the regular season.\n\nAfter the game, East players described a slow start and credited defensive effort, a turnover and improved momentum for helping the Dragons get through the contest. The result left little room for mistakes: one score separated the teams at the finish.\n\nEast went on to capture the 2025 City Series title the following week. The Buchtel game was a key hurdle on that road. Summit County Sports' gallery documents the matchup through Mason Bybee's original game photography.",
+  "article_score": "EAST 12 — BUCHTEL 8",
+  "article_highlights": [
+    "East prevailed 12–8 on October 18, 2025, at Buchtel Stadium.",
+    "The Dragons held the Griffins to eight points in a one-possession matchup.",
+    "East players Emmanuel Jefferson, Marlin Engram Jr. and Anthony Felding III spoke after the victory about overcoming a slow start and creating momentum through defense."
+  ],
+  "article_source_url": "https://sports.yahoo.com/videos/east-football-players-emmanuel-jefferson-235440411.html",
+  "article_source_label": "Akron Beacon Journal · postgame player interviews"
 }
