@@ -1,9 +1,9 @@
 {
   "title": "St. Vincent–St. Mary vs. GlenOak — Baseball (2025–2026)",
   "category": "Baseball",
-  "event_date": "",
+  "event_date": "2026-04-17",
   "location": "Ohio",
-  "summary": "St. Vincent–St. Mary Fighting Irish vs. GlenOak Golden Eagles — 2025–2026 high school baseball season coverage. Photography by Mason Bybee.",
+  "summary": "The Golden Eagles score eight at home to take the April baseball matchup.",
   "short_label": "STVM VS. GLENOAK / 2025–2026 BASEBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/stvm-vs-glenoak-baseball-2025-26/AL3A9925.jpg",
@@ -15,8 +15,16 @@
   "featured": false,
   "published": true,
   "auto_gallery": true,
-  "article_type": "DIAMOND FEATURE",
-  "article_headline": "St. Vincent–St. Mary vs. GlenOak: From the Diamond",
-  "article_dek": "The Fighting Irish and Golden Eagles in an archival baseball photo essay.",
-  "article_body": "Baseball is a game of anticipation and split-second movement: the release of a pitch, a runner leaving the bag and a defender reacting to contact. Those moments are central to this matchup between St. Vincent–St. Mary and GlenOak.\n\nThis archive documents the players and on-field action through Mason Bybee’s photography. It does not attach an unverified box score to the images."
+  "article_type": "GAME RECAP",
+  "article_headline": "GlenOak Defeats St. Vincent–St. Mary 8–4 on the Diamond",
+  "article_dek": "The Golden Eagles score eight at home to take the April baseball matchup.",
+  "article_body": "PLAIN TOWNSHIP, Ohio — GlenOak defeated St. Vincent–St. Mary 8–4 in their April 17, 2026 baseball meeting, according to STVM’s published season results. The Golden Eagles finished with eight runs while the Irish posted four.\n\nThis is a verified result from the 2025–26 school-year schedule, but the source reviewed does not supply a reliable inning-by-inning scoring summary or player-specific offensive statistics for the matchup. Assigning a home run, key hit or pitching line without that reporting would be misleading.\n\nMason Bybee’s baseball photo gallery documents the matchup from field level and keeps the focus on the athletes and plays captured in the images.",
+  "article_score": "GLENOAK 8 — STVM 4",
+  "article_highlights": [
+    "GlenOak defeated the Fighting Irish 8–4 on April 17, 2026.",
+    "The four-run margin came in a road game for STVM against the Golden Eagles.",
+    "An inning-by-inning breakdown and confirmed individual scoring plays were not available in the verified source, so no player-specific highlights are attributed."
+  ],
+  "article_source_url": "https://www.maxpreps.com/oh/akron/st-vincent-st-mary-fighting-irish/baseball/schedule/",
+  "article_source_label": "MaxPreps · STVM 2026 baseball schedule"
 }

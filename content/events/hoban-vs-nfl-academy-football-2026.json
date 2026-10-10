@@ -1,10 +1,10 @@
 {
   "title": "Archbishop Hoban vs. NFL Academy — Football (2026–2027)",
   "category": "Football",
-  "event_date": "",
+  "event_date": "2026-08-28",
   "location": "Dowed Field, Akron, Ohio",
   "short_label": "HOBAN VS. NFL ACADEMY / FOOTBALL",
-  "summary": "Archbishop Hoban Knights vs. NFL Academy football coverage at Dowed Field in Akron, Ohio. Photography by Mason Bybee.",
+  "summary": "An international matchup features late Hoban touchdown drives but a 14-point road win for NFL Academy.",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/hoban-vs-nfl-academy-football-2026/AL3A1394.jpg",
   "gallery": [
@@ -44,10 +44,17 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "GAME FEATURE",
-  "article_headline": "Hoban Hosts NFL Academy: A Global Matchup in Akron",
-  "article_dek": "NFL Academy Europe travels to Dowed Field for an August 28, 2026 game.",
-  "article_body": "Archbishop Hoban faced NFL Academy Europe at Dowed Field on August 28, 2026, bringing an international American football development program into an Akron high school game setting.\n\nThe opponents arrived from different football environments, but the contest unfolded on the same field. Mason Bybee’s photography documents the action and atmosphere of the matchup. Because published sources disagree about Hoban’s point total, this feature avoids printing an unverified score.",
-  "article_source_url": "https://www.hoban.org/athletics/teams/team-page/~athletics-team-id/129",
-  "article_source_label": "Archbishop Hoban Athletics · football schedule"
+  "article_type": "GAME RECAP",
+  "article_headline": "NFL Academy Europe Defeats Hoban 28–14 at Dowed Field",
+  "article_dek": "An international matchup features late Hoban touchdown drives but a 14-point road win for NFL Academy.",
+  "article_body": "AKRON, Ohio — NFL Academy Europe defeated Archbishop Hoban 28–14 on August 28, 2026, bringing an international football matchup to Dowed Field.\n\nThe visiting team built a 21–7 advantage through three quarters. Hoban quarterback Israel “Major” Cribbs helped the Knights respond with an 18-yard touchdown run during the third period. The scoring drive included a 21-yard connection to John Johnson.\n\nNFL Academy quarterback Viktor Lachambre later threw a 20-yard touchdown pass to Nathan Morris, pushing the visitors' lead to 28–7. Hoban running back Kahlil Diming answered with a one-yard score with 2:23 left after breaking runs of 23 and 17 yards on the possession.\n\nThe final was 28–14 according to Archbishop Hoban’s official athletics schedule and live reporting from the Akron Beacon Journal. Some third-party score databases display a different home total; the school and local game recap agree on 14. Mason Bybee’s original football photography documents the event.",
+  "article_source_url": "https://www.aol.com/articles/ohsaa-football-scores-hoban-vs-213059000.html",
+  "article_source_label": "Akron Beacon Journal · August 28, 2026 live game recap (also Hoban Athletics)",
+  "article_score": "NFL ACADEMY 28 — HOBAN 14",
+  "article_highlights": [
+    "NFL Academy carried a 21–7 lead into the fourth quarter against the Knights.",
+    "Hoban quarterback Israel “Major” Cribbs scored on an 18-yard touchdown run in the third quarter.",
+    "NFL Academy quarterback Viktor Lachambre found Nathan Morris for a 20-yard fourth-quarter touchdown to make it 28–7.",
+    "Hoban running back Kahlil Diming scored from one yard out with 2:23 remaining, after gains of 23 and 17 yards on the drive."
+  ]
 }

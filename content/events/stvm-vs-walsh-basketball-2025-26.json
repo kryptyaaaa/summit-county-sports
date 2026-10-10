@@ -1,9 +1,9 @@
 {
   "title": "St. Vincent–St. Mary vs. Walsh Jesuit — Basketball (2025–2026)",
   "category": "Basketball",
-  "event_date": "",
+  "event_date": "2026-02-06",
   "location": "Akron, Ohio",
-  "summary": "St. Vincent–St. Mary Fighting Irish vs. Walsh Jesuit Warriors — 2025–2026 high school basketball season coverage. Photography by Mason Bybee.",
+  "summary": "DeCarlo Prince seals the one-point win after the Warriors erase a 15-point deficit late.",
   "short_label": "STVM VS. WALSH / 2025–2026 BASKETBALL",
   "photographer": "Mason Bybee",
   "cover": "assets/uploads/stvm-vs-walsh-basketball-2025-26/AL3A6181.jpg",
@@ -65,8 +65,16 @@
   "external_url": "",
   "featured": false,
   "published": true,
-  "article_type": "COURTSIDE FEATURE",
-  "article_headline": "St. Vincent–St. Mary vs. Walsh Jesuit: On the Hardwood",
-  "article_dek": "The Fighting Irish and Warriors through a courtside camera.",
-  "article_body": "St. Vincent–St. Mary and Walsh Jesuit have recognizable high school athletic programs in Northeast Ohio. Their boys basketball meeting gives another stage to athletes from the two schools.\n\nThis photo essay brings viewers closer to the movement and reactions of the game. Mason Bybee’s images are presented without a reconstructed box score or unverified individual statistics."
+  "article_type": "GAME RECAP",
+  "article_headline": "Prince's Clutch Free Throws Lift STVM Past Walsh Jesuit 54–53",
+  "article_dek": "DeCarlo Prince seals the one-point win after the Warriors erase a 15-point deficit late.",
+  "article_body": "AKRON, Ohio — St. Vincent–St. Mary survived a late Walsh Jesuit comeback to win 54–53 on February 6, 2026. The Fighting Irish appeared to have control after building a double-digit second-half advantage, but the Warriors made the final minutes a test of composure.\n\nSTVM led 25–20 at halftime, then outscored Walsh 17–9 in the third to take a 42–29 advantage into the fourth. The Warriors responded with a surge that erased a 15-point deficit and put them ahead 53–52 late.\n\nWith the game on the line, senior DeCarlo Prince stepped to the line and made two free throws, restoring a 54–53 STVM lead. Walsh could not release a final shot before time expired, and the Irish held on by a point.\n\nSummit County Sports’ gallery records the action and emotions surrounding the finish through Mason Bybee’s courtside photography.",
+  "article_score": "STVM 54 — WALSH JESUIT 53",
+  "article_highlights": [
+    "The Fighting Irish led 25–20 at halftime and outscored Walsh 17–9 in the third quarter.",
+    "Walsh rallied from 15 points down and took a 53–52 lead late in the fourth.",
+    "Senior DeCarlo Prince hit two free throws to restore the Irish lead 54–53, and Walsh could not get off a final shot."
+  ],
+  "article_source_url": "https://www.stvmathletics.com/boys-basketball-survives-late-rally-to-defeat-walsh-jesuit/",
+  "article_source_label": "St. Vincent–St. Mary Athletics · February 6, 2026 game recap"
 }
