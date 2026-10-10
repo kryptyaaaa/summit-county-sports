@@ -97,9 +97,12 @@
       const paragraphs=String(e.article_body||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean);
       const ref=extURL(e.article_source_url);
       const score=e.article_score?'<div class="story-score">'+esc(e.article_score)+'</div>':'';
+      const moments=Array.isArray(e.article_highlights)?e.article_highlights.map(s=>String(s).trim()).filter(Boolean):[];
+      const highlights=moments.length?'<section class="story-highlights" aria-label="Game highlights"><h3>KEY PLAYS &amp; MOMENTS</h3><ol>'+moments.map((m,i)=>'<li><span>'+String(i+1).padStart(2,'0')+'</span><p>'+esc(m)+'</p></li>').join('')+'</ol></section>':'';
+      const q=e.article_score?'<span class="story-score-mini">FINAL / '+esc(e.article_score)+'</span>':'';
       const byline='<div class="story-byline">BY SUMMIT COUNTY SPORTS EDITORIAL <span>·</span> PHOTOGRAPHY: '+esc(e.photographer||'SUMMIT COUNTY SPORTS')+'</div>';
       const source=ref?'<div class="story-source"><span>REPORTING SOURCE</span><a href="'+esc(ref)+'" target="_blank" rel="noopener noreferrer">'+esc(e.article_source_label||'VIEW SOURCE')+' ↗</a></div>':'';
-      articleTarget.innerHTML='<article id="event-story" class="event-story" aria-labelledby="story-headline"><div class="story-top"><span>'+esc(e.article_type||'EDITORIAL FEATURE')+'</span><span>'+esc(eDate(e)||'FROM THE ARCHIVE')+'</span></div><h2 id="story-headline">'+esc(e.article_headline)+'</h2><p class="story-dek">'+esc(e.article_dek||'')+'</p>'+score+byline+'<div class="story-prose">'+paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')+'</div>'+source+'</article>';
+      articleTarget.innerHTML='<article id="event-story" class="event-story" aria-labelledby="story-headline"><div class="story-top"><span>'+esc(e.article_type||'EDITORIAL FEATURE')+'</span><span>'+esc(eDate(e)||'FROM THE ARCHIVE')+'</span></div><h2 id="story-headline">'+esc(e.article_headline)+'</h2><p class="story-dek">'+esc(e.article_dek||'')+'</p>'+score+highlights+byline+'<div class="story-prose">'+paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')+'</div>'+source+'</article>';
     }
     gallery.innerHTML=videoHtml+photoHtml;
     const external=[['WATCH VIDEO ↗',extURL(e.video_url)],[String(e.external_url||'').includes('adobe.ly/')?'VIEW LIGHTROOM ALBUM ↗':'VIEW ADDITIONAL COVERAGE ↗',extURL(e.external_url)]].filter(x=>x[1]);links.innerHTML=external.map(([name,link])=>`<a class="btn" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${name}</a>`).join('');
