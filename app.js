@@ -66,7 +66,7 @@
   const storyCard=e=>{
     const cover=preview(e);
     const media=cover?'<div class="editorial-image"><img loading="lazy" src="'+esc(cover)+'" alt="'+esc(e.title)+'"></div>':'<div class="editorial-image editorial-fallback"><span>SUMMIT COUNTY<br>SPORTS.</span></div>';
-    return '<a class="editorial-card" href="'+pageHref(e)+'#event-story">'+media+'<div class="editorial-copy"><span class="editorial-category">'+esc(e.article_type||'FEATURE')+' / '+esc(eDate(e)||e.category)+'</span><h3>'+esc(e.article_headline)+'</h3><p>'+esc(e.article_dek||e.summary||'')+'</p><strong>READ THE STORY ↗</strong></div></a>';
+    return '<a class="editorial-card" href="'+pageHref(e)+'#event-story">'+media+'<div class="editorial-copy"><span class="editorial-category">'+esc(e.article_type||'FEATURE')+' / '+esc(eDate(e)||e.category)+'</span><h3>'+esc(e.article_headline)+'</h3><p>'+esc(e.article_dek||e.summary||'')+'</p>'+(e.article_score?'<span class="editorial-final">FINAL · '+esc(e.article_score)+'</span>':'')+'<strong>READ THE STORY ↗</strong></div></a>';
   };
   const latest=document.getElementById('latest-stories');
   if(latest)latest.innerHTML=stories.slice(0,3).map(storyCard).join('');
@@ -75,7 +75,7 @@
   const card=e=>{const cover=preview(e);const count=(e.gallery||[]).filter(imageSrc).length;const video=!!videoEmbed(e.video_url);
     const bottom=video?'WATCH VIDEO':count?`${count} PHOTOS`:e.article_headline?'READ THE ARTICLE':extURL(e.external_url)?'LIGHTROOM ALBUM AVAILABLE':'PHOTOS COMING SOON';
     const artwork=cover?`<img loading="lazy" src="${esc(cover)}" alt="${esc(e.title)}">`:video?'<span class="video-poster-mark" aria-hidden="true">▶</span>':`<span class="placeholder-mark" aria-hidden="true">${esc(abbreviation(e))}</span>`;
-    return `<a class="project-card" href="${pageHref(e)}"><div class="project-cover">${artwork}<span class="project-corner">SCS / ${esc(e.category||'COVERAGE')}</span><span class="project-bottom">${bottom} ↗</span></div><div class="project-meta"><b>${esc(e.category||'EVENT')}</b><span>${esc(eDate(e)||e.location||'EVENT COVERAGE')}</span></div><h3>${esc(e.title)}</h3><p>${esc((e.summary||'').length>134?e.summary.slice(0,131)+'...':e.summary||'View this event in the Summit County Sports archive.')}</p></a>`};
+    return `<a class="project-card" href="${pageHref(e)}"><div class="project-cover">${artwork}<span class="project-corner">SCS / ${esc(e.category||'COVERAGE')}</span><span class="project-bottom">${bottom} ↗</span></div><div class="project-meta"><b>${esc(e.category||'EVENT')}</b><span>${esc(eDate(e)||e.location||'EVENT COVERAGE')}</span></div><h3>${esc(e.title)}</h3><p>${esc((e.summary||'').length>134?e.summary.slice(0,131)+'...':e.summary||'View this event in the Summit County Sports archive.')}</p>${e.article_score?`<span class="project-final-score">FINAL · ${esc(e.article_score)}</span>`:''}</a>`};
   if(document.body.dataset.page==='portfolio'){
     const grid=document.getElementById('project-grid');const buttons=[...document.querySelectorAll('.filter')];
     const special=new Set(['Football','Volleyball','Basketball','Baseball','Soccer']);
