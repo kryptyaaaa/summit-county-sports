@@ -160,3 +160,45 @@ body[data-page="portfolio"] .project-cover img[src*="hoban-vs-walsh-football-202
 .team-contact .btn{flex-shrink:0}
 @media(max-width:970px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.team-card-featured{grid-column:span 2}.team-hero h1{font-size:clamp(76px,10vw,125px)}}
 @media(max-width:600px){.team-hero-inner{padding-top:65px;padding-bottom:36px}.team-hero h1{font-size:clamp(65px,13vw,95px);margin:37px 0 40px}.team-hero-bottom{display:block}.team-hero-bottom>span{display:block;text-align:left;margin-top:19px}.team-hero-bottom p{font-size:13px}.team-section{padding:66px 0 80px}.team-section-heading{display:block;margin:30px 0}.team-section-heading h2{font-size:clamp(69px,14vw,92px);margin-bottom:22px}.team-section-heading p{font-size:13px}.team-grid{grid-template-columns:1fr}.team-card,.team-card-featured{grid-column:auto;min-height:370px}.team-card-body{padding-top:100px}.team-card h3{font-size:clamp(37px,9vw,52px)}.team-contact{padding:64px 0}.team-contact-inner{display:block}.team-contact h2{font-size:clamp(55px,11vw,80px)}.team-contact .btn{margin-top:28px}.team-home-link{font-size:10px}}
+
+/* SCS editorial reporting and photo essays */
+.event-story{max-width:990px;margin:0 auto 58px;padding:48px clamp(24px,5vw,76px);background:#f4f0ea;color:#1b191b;border-left:5px solid #db2433}
+.story-top{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-bottom:1px solid #ccc3bf;padding-bottom:17px;margin-bottom:25px;font-size:10px;font-weight:900;letter-spacing:.15em;color:#a12030}
+.event-story h2{font:900 clamp(40px,5.5vw,71px)/.96 var(--display);letter-spacing:-.015em;margin:0 0 23px}
+.story-dek{max-width:750px;font-size:clamp(17px,2vw,22px);line-height:1.5;color:#514a4e;margin:0 0 23px}
+.story-score{background:#1b191b;color:#fff;display:inline-block;padding:17px 25px;margin:1px 0 24px;font:900 clamp(18px,3vw,30px)/1 var(--display)}
+.story-byline{border-top:1px solid #cec4c0;padding-top:17px;margin:12px 0 27px;color:#645e60;font-size:10px;font-weight:900;letter-spacing:.1em;line-height:1.8}
+.story-byline span{color:#c02838;padding:0 8px}
+.story-prose{max-width:760px;font-size:15px;line-height:1.9}.story-prose p{margin:0 0 19px}
+.story-prose p:first-child::first-letter{float:left;font:900 46px/.9 var(--display);margin-right:8px;color:#bf2232}
+.story-source{border-top:1px solid #cec4c0;padding-top:19px;margin-top:30px;display:flex;flex-wrap:wrap;gap:10px 24px}
+.story-source span{font-size:10px;font-weight:900;letter-spacing:.1em;color:#6c6466}
+.story-source a{font-size:12px;font-weight:700;color:#ab1c2b;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.editorial-home{background:#181619;color:#fff}
+.editorial-home-head{display:flex;align-items:end;justify-content:space-between;gap:26px;margin:32px 0 35px}
+.editorial-home-head span{font-size:10px;letter-spacing:.17em;font-weight:900;color:#fa7b82}
+.editorial-home-head h2{font:900 clamp(52px,6.8vw,91px)/.9 var(--display);margin:14px 0 0}
+.editorial-home-head h2 em{color:#e32a3a;font-style:normal}
+.editorial-see-all{border:1px solid #9f777c;padding:15px 19px;white-space:nowrap;font-size:11px;font-weight:900}
+.editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.editorial-card{display:flex;flex-direction:column;min-width:0;background:#292529;color:#f7f5f4;border:1px solid #504a4c;overflow:hidden;transition:transform .2s,border-color .2s}
+.editorial-card:hover{transform:translateY(-5px);border-color:#e72f42}
+.editorial-image{height:185px;overflow:hidden;background:#4c1623}
+.editorial-image img{width:100%;height:100%;object-fit:cover;object-position:center 39%;display:block}
+.editorial-fallback{display:flex;align-items:end;justify-content:end;padding:20px;background:linear-gradient(128deg,#161219,#792032)}
+.editorial-fallback span{font:900 40px/.88 var(--display);text-align:right;color:#ffffff5b}
+.editorial-copy{padding:24px 25px 29px;display:flex;flex-direction:column;flex:1}
+.editorial-category{color:#fa858a;font-size:10px;font-weight:900;letter-spacing:.12em}
+.editorial-copy h3{font:900 clamp(29px,3vw,38px)/1.03 var(--display);margin:15px 0 13px}
+.editorial-copy p{font-size:12px;line-height:1.65;color:#d2cdd0;margin:0 0 25px}
+.editorial-copy strong{font-size:10px;letter-spacing:.13em;margin-top:auto;color:#fa7981}
+.stories-hero{background:radial-gradient(ellipse at 85% 18%,#661a28,transparent 65%),#111014;padding:64px 0 60px}
+.stories-hero .eyebrow{margin-top:52px}
+.stories-hero h1{font:900 clamp(82px,14vw,180px)/.78 var(--display);letter-spacing:-.02em;margin:36px 0}
+.stories-hero h1 span{color:#e33242}
+.stories-hero p{max-width:700px;color:#d2cdd0;line-height:1.8;font-size:16px}
+.stories-hero-bottom{border-top:1px solid #565055;margin-top:54px;padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:11px;font-weight:900;letter-spacing:.13em}
+.stories-hero-bottom a{color:#ff7d82}
+.stories-archive{background:#f1efeb;color:#181618}
+@media(max-width:920px){.editorial-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:590px){.event-story{padding:30px 20px;margin-bottom:35px;border-left-width:4px}.story-prose{font-size:14px}.story-top{font-size:9px}.story-byline{font-size:9px}.editorial-grid{grid-template-columns:1fr;gap:18px}.editorial-home-head{flex-direction:column;align-items:start}.editorial-image{height:195px}.stories-hero{padding:42px 0 48px}.stories-hero h1{font-size:clamp(79px,18vw,115px)}}

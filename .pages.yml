@@ -48,6 +48,27 @@ content:
       - name: summary
         label: Event Description
         type: text
+      - name: article_type
+        label: Article Type
+        type: string
+      - name: article_headline
+        label: Article Headline
+        type: string
+      - name: article_dek
+        label: Article Subheadline
+        type: text
+      - name: article_score
+        label: Verified Final Score
+        type: string
+      - name: article_body
+        label: Article Body (blank lines separate paragraphs)
+        type: text
+      - name: article_source_url
+        label: Source URL
+        type: string
+      - name: article_source_label
+        label: Source Credit
+        type: string
       - name: photographer
         label: Photographer Credit
         type: string

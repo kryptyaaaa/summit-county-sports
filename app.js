@@ -61,9 +61,19 @@
       }).join('');
     }
   }
+  // Editorial articles and photo essay archive.
+  const stories=events.filter(e=>e.category!=='Concerts'&&e.article_headline).sort((a,b)=>String(b.event_date||'').localeCompare(String(a.event_date||''))||a.title.localeCompare(b.title));
+  const storyCard=e=>{
+    const cover=preview(e);
+    const media=cover?'<div class="editorial-image"><img loading="lazy" src="'+esc(cover)+'" alt="'+esc(e.title)+'"></div>':'<div class="editorial-image editorial-fallback"><span>SUMMIT COUNTY<br>SPORTS.</span></div>';
+    return '<a class="editorial-card" href="'+pageHref(e)+'#event-story">'+media+'<div class="editorial-copy"><span class="editorial-category">'+esc(e.article_type||'FEATURE')+' / '+esc(eDate(e)||e.category)+'</span><h3>'+esc(e.article_headline)+'</h3><p>'+esc(e.article_dek||e.summary||'')+'</p><strong>READ THE STORY ↗</strong></div></a>';
+  };
+  const latest=document.getElementById('latest-stories');
+  if(latest)latest.innerHTML=stories.slice(0,3).map(storyCard).join('');
+  if(document.body.dataset.page==='stories'){const grid=document.getElementById('stories-grid');if(grid)grid.innerHTML=stories.map(storyCard).join('');}
   // Portfolio cards and quick category navigation.
   const card=e=>{const cover=preview(e);const count=(e.gallery||[]).filter(imageSrc).length;const video=!!videoEmbed(e.video_url);
-    const bottom=video?'WATCH VIDEO':count?`${count} PHOTOS`:extURL(e.external_url)?'LIGHTROOM ALBUM AVAILABLE':'PHOTOS COMING SOON';
+    const bottom=video?'WATCH VIDEO':count?`${count} PHOTOS`:e.article_headline?'READ THE ARTICLE':extURL(e.external_url)?'LIGHTROOM ALBUM AVAILABLE':'PHOTOS COMING SOON';
     const artwork=cover?`<img loading="lazy" src="${esc(cover)}" alt="${esc(e.title)}">`:video?'<span class="video-poster-mark" aria-hidden="true">▶</span>':`<span class="placeholder-mark" aria-hidden="true">${esc(abbreviation(e))}</span>`;
     return `<a class="project-card" href="${pageHref(e)}"><div class="project-cover">${artwork}<span class="project-corner">SCS / ${esc(e.category||'COVERAGE')}</span><span class="project-bottom">${bottom} ↗</span></div><div class="project-meta"><b>${esc(e.category||'EVENT')}</b><span>${esc(eDate(e)||e.location||'EVENT COVERAGE')}</span></div><h3>${esc(e.title)}</h3><p>${esc((e.summary||'').length>134?e.summary.slice(0,131)+'...':e.summary||'View this event in the Summit County Sports archive.')}</p></a>`};
   if(document.body.dataset.page==='portfolio'){
@@ -82,6 +92,15 @@
     const embeddedVideo=videoEmbed(e.video_url);
     const videoHtml=embeddedVideo?`<div class="event-video"><iframe class="ig-embed" src="${esc(embeddedVideo)}" title="Watch ${esc(e.title)} video" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe><a href="${esc(extURL(e.video_url))}" target="_blank" rel="noopener noreferrer">WATCH AT SOURCE ↗</a></div>`:'';
     const photoHtml=images.length?images.map((src,i)=>`<button class="gallery-item" type="button" data-image="${i}" aria-label="Enlarge photo ${i+1} of ${images.length}"><img src="${esc(src)}" loading="lazy" alt="${esc(e.title)} — photo ${i+1}"></button>`).join(''):embeddedVideo?'':`<div class="gallery-empty"><strong>${extURL(e.external_url)?'VIEW THE LIGHTROOM ALBUM BELOW.':'THE PHOTOS ARE ON THEIR WAY.'}</strong><p>${extURL(e.external_url)?'The shared photo album is linked below. Images will appear directly on Summit County Sports after the web-ready files are imported.':'This project is in the archive, but its full photo gallery hasn\'t been uploaded yet. Check back for new coverage.'}</p></div>`;
+    const articleTarget=document.getElementById('event-article');
+    if(articleTarget&&e.article_headline){
+      const paragraphs=String(e.article_body||'').split(/\n\s*\n/).map(p=>p.trim()).filter(Boolean);
+      const ref=extURL(e.article_source_url);
+      const score=e.article_score?'<div class="story-score">'+esc(e.article_score)+'</div>':'';
+      const byline='<div class="story-byline">BY SUMMIT COUNTY SPORTS EDITORIAL <span>·</span> PHOTOGRAPHY: '+esc(e.photographer||'SUMMIT COUNTY SPORTS')+'</div>';
+      const source=ref?'<div class="story-source"><span>REPORTING SOURCE</span><a href="'+esc(ref)+'" target="_blank" rel="noopener noreferrer">'+esc(e.article_source_label||'VIEW SOURCE')+' ↗</a></div>':'';
+      articleTarget.innerHTML='<article id="event-story" class="event-story" aria-labelledby="story-headline"><div class="story-top"><span>'+esc(e.article_type||'EDITORIAL FEATURE')+'</span><span>'+esc(eDate(e)||'FROM THE ARCHIVE')+'</span></div><h2 id="story-headline">'+esc(e.article_headline)+'</h2><p class="story-dek">'+esc(e.article_dek||'')+'</p>'+score+byline+'<div class="story-prose">'+paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')+'</div>'+source+'</article>';
+    }
     gallery.innerHTML=videoHtml+photoHtml;
     const external=[['WATCH VIDEO ↗',extURL(e.video_url)],[String(e.external_url||'').includes('adobe.ly/')?'VIEW LIGHTROOM ALBUM ↗':'VIEW ADDITIONAL COVERAGE ↗',extURL(e.external_url)]].filter(x=>x[1]);links.innerHTML=external.map(([name,link])=>`<a class="btn" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${name}</a>`).join('');
     const dialog=document.getElementById('lightbox');if(images.length&&dialog){let idx=0;const viewer=dialog.querySelector('img'), counter=dialog.querySelector('.lightbox-count');const show=()=>{viewer.src=images[idx];viewer.alt=e.title+' photo '+(idx+1);counter.textContent=(idx+1)+' / '+images.length};gallery.querySelectorAll('[data-image]').forEach(b=>b.addEventListener('click',()=>{idx=Number(b.dataset.image);show();dialog.showModal()}));dialog.querySelector('.close-lightbox').addEventListener('click',()=>dialog.close());dialog.querySelector('.lightbox-prev').addEventListener('click',()=>{idx=(idx-1+images.length)%images.length;show()});dialog.querySelector('.lightbox-next').addEventListener('click',()=>{idx=(idx+1)%images.length;show()});dialog.addEventListener('click',ev=>{if(ev.target===dialog)dialog.close()});dialog.addEventListener('keydown',ev=>{if(ev.key==='ArrowLeft'){idx=(idx-1+images.length)%images.length;show()}if(ev.key==='ArrowRight'){idx=(idx+1)%images.length;show()}});}
