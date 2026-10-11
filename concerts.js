@@ -14,7 +14,7 @@
     const label=[e.venue||e.location,fmtDate(e.event_date)].filter(Boolean).join(' / ');
     const desc=e.summary||'Live concert coverage from Summit County Concerts.';
     const cover=src?'<img src="'+esc(src)+'" loading="lazy" alt="'+esc(e.title)+' concert cover photo">':'<span class="scc-placeholder">LIVE.</span>';
-    return '<a class="scc-card" href="concert-event.html?slug='+encodeURIComponent(e.slug)+'"><div class="scc-cover">'+cover+'<span class="scc-cover-tag">LIVE COVERAGE</span></div><div class="scc-card-body"><div class="scc-card-meta">'+esc(label||'CONCERT PHOTOGRAPHY')+'</div><h3>'+esc(e.title)+'</h3><p>'+esc(desc.length>135?desc.slice(0,132)+'…':desc)+'</p><span class="scc-card-cta">OPEN THE GALLERY ↗</span></div></a>';
+    return '<a class="scc-card" href="concert-event.html?slug='+encodeURIComponent(e.slug)+(e.article_headline&&!src?'#event-story':'')+'"><div class="scc-cover">'+cover+'<span class="scc-cover-tag">LIVE COVERAGE</span></div><div class="scc-card-body"><div class="scc-card-meta">'+esc(label||'CONCERT PHOTOGRAPHY')+'</div><h3>'+esc(e.title)+'</h3><p>'+esc(desc.length>135?desc.slice(0,132)+'…':desc)+'</p><span class="scc-card-cta">'+(src?'OPEN THE GALLERY':e.article_headline?'READ THE FEATURE':'VIEW SHOW DETAILS')+' ↗</span></div></a>';
   }).join(''):'<div class="scc-empty"><div><span class="scc-eyebrow">THE LIVE ARCHIVE / 001</span><h3>FIRST SET<br>COMING SOON.</h3><p>Our dedicated concert archive is ready. Artist galleries, live-show photography and performance films will appear here as they are published.</p></div><a class="scc-btn" href="#contact">BOOK COVERAGE <span aria-hidden="true">↗</span></a></div>';
   const year=document.getElementById('scc-year');if(year)year.textContent=new Date().getFullYear();
 })();
