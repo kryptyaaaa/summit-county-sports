@@ -7,6 +7,8 @@ const eventsDir = path.join(root, 'content', 'events');
 const target = path.join(root, '_site');
 const toSlug = v => String(v).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const site = JSON.parse(fs.readFileSync(path.join(root, 'content', 'site.json'), 'utf8'));
+const ga4Id = /^G-[A-Z0-9]+$/i.test(site.ga4_measurement_id || '') ? site.ga4_measurement_id : ''; 
+const analyticsSnippet = ga4Id ? `<script async src="https://www.googletagmanager.com/gtag/js?id=${ga4Id}"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','${ga4Id}',{send_page_view:true});</script>` : '';
 const events = fs.readdirSync(eventsDir).filter(f => f.endsWith('.json')).map(file => {
   const raw = JSON.parse(fs.readFileSync(path.join(eventsDir, file), 'utf8'));
   return {
@@ -62,7 +64,7 @@ const copy = p => {
     const html = fs.readFileSync(path.join(root, p), 'utf8');
     const externalDataScript = /<script defer src="assets\/content-data\.js[^"]*"><\/script>/;
     if (!externalDataScript.test(html)) throw new Error(`Gallery data script missing from ${p}`);
-    const current = html.replace(externalDataScript, inlineGalleryData)
+    const current = html.replace(externalDataScript, inlineGalleryData).replace('</head>', `${analyticsSnippet}</head>`)
       .replace(/app\.js\?v=[^"]+/g, `app.js?v=${assetVersion('app.js')}`)
       .replace(/styles\.css\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`)
       .replace(/concerts\.js\?v=[^"]+/g, `concerts.js?v=${assetVersion('concerts.js')}`)
@@ -72,7 +74,7 @@ const copy = p => {
     fs.copyFileSync(path.join(root, p), destination);
   }
 };
-['index.html', 'portfolio.html', 'event.html', 'stories.html', 'team.html', 'concerts.html', 'concert-event.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
+['index.html', 'portfolio.html', 'event.html', 'stories.html', 'team.html', 'concerts.html', 'concert-event.html', 'stats.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
 let count = 0;
 for (const event of publicEvents) {
   for (const image of [event.cover, ...event.gallery]) {
