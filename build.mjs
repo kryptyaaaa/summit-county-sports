@@ -63,7 +63,7 @@ const copy = p => {
   if (p.endsWith('.html')) {
     const html = fs.readFileSync(path.join(root, p), 'utf8');
     const externalDataScript = /<script defer src="assets\/content-data\.js[^"]*"><\/script>/;
-    if (!externalDataScript.test(html)) throw new Error(`Gallery data script missing from ${p}`);
+    if (!externalDataScript.test(html) && p !== 'stats.html') throw new Error(`Gallery data script missing from ${p}`);
     const current = html.replace(externalDataScript, inlineGalleryData).replace('</head>', `${analyticsSnippet}</head>`)
       .replace(/app\.js\?v=[^"]+/g, `app.js?v=${assetVersion('app.js')}`)
       .replace(/styles\.css\?v=[^"]+/g, `styles.css?v=${assetVersion('styles.css')}`)
