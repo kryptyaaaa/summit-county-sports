@@ -91,3 +91,30 @@
 .scc-detail .gallery-empty{background:#e4dfe6}
 @media(max-width:900px){.scc-wrap{width:calc(100% - 42px)}.scc-topline{padding:0 21px}.scc-hero-layout{grid-template-columns:1fr;gap:18px;padding:68px 0 54px}.scc-hero{min-height:auto}.scc-hero h1{font-size:clamp(90px,16vw,149px)}.scc-stage{height:320px}.scc-stage-type{font-size:165px}.scc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.scc-links{gap:17px}.scc-contact-inner{grid-template-columns:1fr}.scc-section{padding:70px 0}}
 @media(max-width:600px){.scc-wrap{width:calc(100% - 32px)}.scc-topline{font-size:8px;padding:0 16px}.scc-topline span:last-child{display:none}.scc-nav{min-height:102px;align-items:flex-start;justify-content:center;flex-direction:column;gap:12px;padding:15px 0}.scc-wordmark{font-size:16px}.scc-wordmark strong{font-size:26px}.scc-mark{width:37px;height:37px;font-size:21px}.scc-links{gap:16px;font-size:9px}.scc-links .scc-sibling{padding:7px 9px}.scc-hero-layout{padding:58px 0 40px}.scc-hero h1{font-size:clamp(86px,20vw,132px);margin:29px 0 18px}.scc-hero p{font-size:13px}.scc-stage{height:280px}.scc-stage-type{font-size:130px;bottom:73px}.scc-stage-foot{font-size:8px}.scc-tape{font-size:17px}.scc-heading{display:block}.scc-heading p{margin-top:25px}.scc-grid,.scc-value-grid{grid-template-columns:1fr}.scc-empty{padding:25px;display:block}.scc-section{padding:56px 0}.scc-contact h2{font-size:86px}.scc-footer-inner{align-items:flex-start}}
+
+
+/* Editorial reports for Summit County Concerts */
+.scc-detail .concert-article-slot:empty{display:none}
+.scc-detail .event-story{
+  border-left-color:var(--scc-accent);
+  background:#17121b;
+  color:#f5eff5;
+  box-shadow:0 16px 52px #180e1c2b;
+}
+.scc-detail .story-top{border-bottom-color:#51404e;color:#ff8fa4}
+.scc-detail .story-dek{color:#d6cbd5}
+.scc-detail .story-byline{color:#d0c0ce;border-top-color:#584954}
+.scc-detail .story-byline span{color:var(--scc-accent)}
+.scc-detail .story-prose{color:#f0e9ef}
+.scc-detail .story-prose p:first-child::first-letter{color:var(--scc-accent)}
+.scc-detail .story-highlights{background:#281c29;border-top-color:var(--scc-accent)}
+.scc-detail .story-highlights h3{color:#fff}
+.scc-detail .story-highlights li{border-top-color:#584352}
+.scc-detail .story-highlights li>span{color:var(--scc-accent)}
+.scc-detail .story-source{border-top-color:#584954}
+.scc-detail .story-source span{color:#cfc0cb}
+.scc-detail .story-source a{color:#ff8fa4}
+@media(max-width:600px){
+  .scc-detail .event-story{padding:32px 22px}
+  .scc-detail .event-story h2{font-size:clamp(36px,10vw,56px)}
+}
