@@ -60,7 +60,7 @@ const assetVersion = file => crypto.createHash('sha256').update(fs.readFileSync(
 const copy = p => {
   const destination = path.join(target, p);
   fs.mkdirSync(path.dirname(destination), { recursive: true });
-  if (p.endsWith('.html')) {
+  if (p.endsWith('.html') && p !== 'summitcountyconcerts/index.html') {
     const html = fs.readFileSync(path.join(root, p), 'utf8');
     const externalDataScript = /<script defer src="assets\/content-data\.js[^"]*"><\/script>/;
     if (!externalDataScript.test(html) && p !== 'stats.html') throw new Error(`Gallery data script missing from ${p}`);
@@ -74,7 +74,7 @@ const copy = p => {
     fs.copyFileSync(path.join(root, p), destination);
   }
 };
-['index.html', 'portfolio.html', 'event.html', 'stories.html', 'team.html', 'concerts.html', 'concert-event.html', 'stats.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js'].forEach(copy);
+['index.html', 'portfolio.html', 'event.html', 'stories.html', 'team.html', 'concerts.html', 'concert-event.html', 'stats.html', 'styles.css', 'app.js', 'concerts.css', 'concerts.js', 'assets/logo.svg', 'assets/favicon.svg', 'assets/content-data.js', 'robots.txt', 'sitemap.xml', 'summitcountyconcerts/index.html'].forEach(copy);
 let count = 0;
 for (const event of publicEvents) {
   for (const image of [event.cover, ...event.gallery]) {
