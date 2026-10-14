@@ -1,0 +1,39 @@
+name: Verify Summit County Concerts
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'build-concerts.mjs'
+      - '.github/workflows/concerts-check.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out shared gallery repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build concert site from the shared galleries
+        run: |
+          node --check build-concerts.mjs
+          node build-concerts.mjs
+      - name: Check the two-domain separation
+        run: |
+          test -s _site/index.html
+          test -s _site/CNAME
+          grep -qx 'summitcountysports.com' _site/CNAME
+          test -s _concerts_site/index.html
+          test -s _concerts_site/concert-event.html
+          test -s _concerts_site/assets/content-data.js
+          test ! -e _concerts_site/CNAME
+          grep -q 'summitcountyconcerts.com/' _concerts_site/index.html
+          grep -q 'href="https://summitcountysports.com/' _concerts_site/index.html
+          grep -q 'sitemap.xml' _concerts_site/robots.txt
+          echo "Independent concerts build verified; sports CNAME unchanged."
