@@ -17,10 +17,12 @@ const domain = 'https://summitcountyconcerts.com';
 
 // Run the same production gallery builder as the existing sports website.
 // That guarantees the two sites share the same published photos and articles.
-execFileSync(process.execPath, [path.join(root, 'build.mjs')], {
-  cwd: root,
-  stdio: 'inherit',
-});
+if (!process.argv.includes('--reuse-site')) {
+  execFileSync(process.execPath, [path.join(root, 'build.mjs')], {
+    cwd: root,
+    stdio: 'inherit',
+  });
+}
 
 const dataJS = fs.readFileSync(path.join(source, 'assets/content-data.js'), 'utf8');
 const match = dataJS.match(/window\.SCS_CONTENT\s*=\s*([\s\S]*);\s*$/);
