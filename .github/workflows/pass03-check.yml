@@ -32,6 +32,11 @@ jobs:
           test -s _pass03_site/live.html
           test -s _pass03_site/press.html
           test -s _pass03_site/contribute.html
+          test -s _pass03_site/editorial.html
+          test -s _pass03_site/media-kit.html
+          test -s _pass03_site/discover.html
+          grep -q 'NEXT UP' _pass03_site/discover.html
+          grep -q 'Photographers retain' _pass03_site/editorial.html
           test -s _pass03_site/content.json
           test -s _pass03_site/stories/master-of-tributes-afterlife-oct-10-2026/index.html
           grep -q 'Sanitarium' _pass03_site/stories/master-of-tributes-afterlife-oct-10-2026/index.html
