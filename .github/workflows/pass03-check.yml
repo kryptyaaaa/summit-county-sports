@@ -1,0 +1,54 @@
+name: Verify PASS03 publication
+
+on:
+  pull_request:
+    paths:
+      - 'pass03/**'
+      - 'build-pass03.mjs'
+      - 'PASS03-SETUP.md'
+      - '.github/workflows/pass03-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript
+        run: |
+          node --check build-pass03.mjs
+          node --check pass03/site.js
+      - name: Build standalone PASS03 publication
+        run: node build-pass03.mjs
+      - name: Verify pages, original concert assets and isolation
+        run: |
+          test -s _pass03_site/index.html
+          test -s _pass03_site/live.html
+          test -s _pass03_site/press.html
+          test -s _pass03_site/contribute.html
+          test -s _pass03_site/content.json
+          test -s _pass03_site/sitemap.xml
+          test ! -e _pass03_site/CNAME
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const data = JSON.parse(fs.readFileSync('_pass03_site/content.json', 'utf8'));
+          assert.equal(data.publication, 'PASS03');
+          assert.ok(data.events.every(x => x.category === 'Concerts'));
+          assert.ok(data.events.length >= 1, 'Expected at least one real concert event');
+          const featured = data.events.find(x => x.cover) || data.events[0];
+          assert.ok(featured.cover);
+          assert.ok(fs.existsSync('_pass03_site/' + featured.cover));
+          for (const event of data.events) {
+            for (const photo of event.gallery) {
+              assert.ok(fs.existsSync('_pass03_site/' + photo), 'Missing photo ' + photo);
+            }
+          }
+          console.log('PASS03 verified:', data.events.length, 'real stories and gallery photos.');
+          NODE
