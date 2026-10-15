@@ -1,42 +1,53 @@
-# PASS03 — YOUTH SPORTS PHOTOGRAPHERS (Instagram-first shortlist)
-Research date: 2026-10-15. Founder explicitly wants **young sports photographers in other U.S. cities, preferably high school students / early college creators, under 5,000 followers**, rather than experienced concert photographers or adult portrait pros. **No one has been contacted.**
+# PASS03: screened youth / early-career independent SPORTS photographers
+**Audit date:** 2026-10-15. **OUTREACH SENT: 0.** Founder's updated hard filter: **no photographers already affiliated with a media outlet, school media publication, production company, or current official athletics creative role**. Under 5,000 Instagram followers and younger (high school / early college) are goals, not inferred facts.
 
-## Evidence/limitations
+## Critical limitation
+Instagram pages were requested directly, but public access returned cache miss / timeout. This audit read **publicly indexed creator-profile biographies** (primarily Gondola), plus public professional sites and posts. It does **not** amount to viewing each person's live Instagram bio. Gondola's "Total Followers" is a creator-platform figure and is NOT necessarily a current Instagram count. An account with no affiliation **listed** might still have one. **No person is fully verified/approved until the live IG bio and recent posts are reviewed or they confirm independently.**
 
-Names, reported follower figures and school associations are from recently indexed public Gondola profiles, not live Instagram access. Gondola lists "Total Followers" and may aggregate across connected platforms; it is a **screening proxy**, not a confirmed current Instagram follower count. We were unable to fetch Instagram grids directly. Follow each Instagram link and verify the actual handle, current count, present high-school/college status, recent sports portfolio, music interest, location, and whether they have done concerts (not independently verified). Do not assume a high-school association means the photographer is a current high-school student. Do not assign minors without age-appropriate parent/guardian and venue considerations.
+## Provisional shortlist — independent sports photographers, no disclosed media outlet in available bio
+These are **research-only**. They should not be contacted without explicit founder permission.
 
-## A. Closest fit — explicit high school or student school-media work
+| Priority | Instagram | City | Public bio evidence | Possible affiliations / uncertainty | Under-5k / youth status | Source |
+| --- | --- | --- | --- | --- | --- | --- |
+| High | https://instagram.com/shots_by_syd_/ | Knoxville, TN | "Sports Photographer 📸 Main: @imsydneyjett" | No outlet in indexed bio; check live grid and tagged work | Gondola **150 total followers**; age UNKNOWN | https://gondola.cc/shots_by_syd_ |
+| High | https://instagram.com/shotsbysharise/ | Buena Park, CA | Sharise Cho explicitly: "I'm a high school student studying graphic design and photography, and I aspire to work in sports media (especially for the NHL)" | Credited on school boys-basketball account, **not proof she belongs to a formal outlet**; verify whether she holds official team/media role. Gondola account for person is @sharisecho; portfolio posts @shotsbysharise | IG follower count UNKNOWN; HS status from indexed description | https://gondola.cc/sharisecho |
+| Medium | https://instagram.com/m_howellsmedia/ | Atlanta, GA | "Photographer | Videographer" | Not formally identifying an outlet in indexed bio, but extensive collaborations with All Things Loyal, school sports & football: must confirm if attached to an organization | Gondola **4,427 total followers**; age UNKNOWN | https://gondola.cc/m_howellsmedia |
+| High | https://instagram.com/gm.visuals_/ | Knoxville, TN | "Knoxville based sports photographer. I'll shoot any sport that exists. Currently specialized on high school sports ..." | No publication named in indexed bio; collaborations with schools and @keystone_crtv warrant checking for a staff/contract role | Gondola **1,389 total followers**; age UNKNOWN | https://gondola.cc/gm.visuals_ |
+| High | https://instagram.com/mae.sportsimages/ | Phoenix, AZ | "Freelance Sports Photographer" in Arizona and California | No outlet named in indexed bio; verify any hidden publication/team affiliation | Gondola **1,197 total followers**; age UNKNOWN | https://gondola.cc/mae.sportsimages |
+| Medium | https://instagram.com/bhow.visuals/ | Cincinnati, OH | Brodie Howard, sports photographer and University of Cincinnati student; solo portfolio, formerly school yearbook | No currently disclosed media outlet; **former yearbook** affiliation; verify there is no current outlet/team role | Young college student supported; IG follower count UNKNOWN | https://www.bhowvisuals.com/ |
+| Low / local backup | https://instagram.com/evanrphotos/ | Aurora, OH | Evan Radzanowski's school-hosted portfolio describes HS senior shooting sports, portraits and branding | Photos for school/community; no media outlet named in personal portfolio, but website is hosted on school domain. Verify current status and any school media role | HS senior by self-description; IG follower count UNKNOWN | https://sites.google.com/aurora-schools.org/evanrphotos/home |
 
-| Priority | Candidate and Instagram | Public area | Reported followers (Gondola) | Public description | Evidence |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Brylie Price — https://instagram.com/brylie.price23/ | Carmel, Indiana | 315 | Bio explicitly says Carmel HS student, photographer, sports media/design; Carmel soccer and tennis work | https://gondola.cc/brylie.price23 |
-| 1 | Alan Ko — https://instagram.com/alankophoto/ | Thousand Oaks / greater Los Angeles, CA | 1,645 | Student photographer; TOHS Hoops / Lancer school media and basketball | https://gondola.cc/alankophoto |
-| 1 | Anderson Shows — https://instagram.com/andersonshows.media/ | Oxford, Mississippi | 1,900 | Oxford High School, student sports productions, Charger Media Group; **check present enrollment** | https://gondola.cc/andersonshows.media |
-| 1 | Julia Copas — https://instagram.com/julia_copas/ | Austin, Texas | 501 | Student journalist, McCallum sports/high-school football photography | https://gondola.cc/julia_copas |
-| 1 | Sharise Cho — https://instagram.com/shotsbysharise/ | Buena Park, California | **unknown** | Explicitly says high-school student learning photography/design; basketball photo credits. *Instagram handle* appears in Gondola credited posts and differs from Gondola profile name @sharisecho. Check count before qualifying as <5k. | https://gondola.cc/sharisecho |
-| 2 | Marlon — https://instagram.com/marlon.visuals/ | Weston, Florida | 773 | Cypress Bay football photographer and media intern; school-age **not confirmed** | https://gondola.cc/marlon.visuals |
-| 2 | Henry Meade — https://instagram.com/meade.media_/ | Greater Chicago / York HS, Illinois | 2,130 | Photographs York High School sports; school-age **not confirmed**, says open to work | https://gondola.cc/meade.media_ |
-| 2 | Macen Howells — https://instagram.com/m_howellsmedia/ | Atlanta, Georgia | 4,427 | High-school football and sports videography; **age not established**, larger following near cutoff | https://gondola.cc/m_howellsmedia |
-| 2 | Sydney — https://instagram.com/shots_by_syd_/ | Knoxville, Tennessee | 150 | Small sports photography account; **age and current school status unknown** | https://gondola.cc/shots_by_syd_ |
+**These are NOT guaranteed independent**, and it is not verified that any have never photographed a concert. Check every live Instagram bio, link in bio, tagged collaborations, current follower count and school/age status before qualifying.
 
-## B. Young college student sports photographers / backup prospects
+## Remove — disclosed media, publication or official team/school creative role
 
-| Priority | Candidate and Instagram | Market | Reported Gondola followers | Student evidence | Source |
-| --- | --- | --- | --- | --- | --- |
-| 2 | Abby Gedville — https://instagram.com/a.g_photography10/ | Tampa, Florida | 341 | Student photographer at University of Tampa, sports digital media | https://gondola.cc/a.g_photography10 |
-| 2 | Blake Blechner — https://instagram.com/blakeblechner/ | Iowa City, Iowa | 471 | Student photographer for Iowa Hawkeyes | https://gondola.cc/blakeblechner |
-| 2 | Max Meckoll — https://instagram.com/shotbymaxm/ | Eugene, Oregon | 681 | Oregon marketing student, soccer student creative director | https://gondola.cc/shotbymaxm |
-| 2 | Jacob Taylor — https://instagram.com/photosjaketakes/ | Auburn, Alabama | 1,509 | Auburn Athletics student photographer | https://gondola.cc/photosjaketakes |
-| 2 | Taylor Newton — https://instagram.com/taylornewtonphoto/ | Boone, North Carolina | 2,056 | Student photographer for Appalachian State athletics | https://gondola.cc/taylornewtonphoto |
-| 3 | Mason Munn — https://instagram.com/munns_media/ | Bloomington, Indiana | 1,835 | Indiana University student photographer | https://gondola.cc/munns_media |
-| 3 | Brock Burgan — https://instagram.com/shotbyburgan/ | Denton / DFW, Texas | 2,069 | University of North Texas class of 2026; graduated/near graduating, may be outside preferred age range | https://gondola.cc/shotbyburgan |
+| Handle | Screening decision | Published evidence |
+| --- | --- | --- |
+| @brylie.price23 | **REMOVE** — CarmelHoundsHQ listed right in public bio | https://gondola.cc/brylie.price23 |
+| @alankophoto | **REMOVE** — bio tags @lancerlegend (school publication) and @tohs_hoops | https://gondola.cc/alankophoto |
+| @andersonshows.media | **REMOVE** — "Head Director of the Charger Media Group" and Ole Miss Sports Productions | https://gondola.cc/andersonshows.media |
+| @julia_copas | **REMOVE** — McCallum Journalism and Mac Knights Sports work; describes student journalist | https://gondola.cc/julia_copas |
+| @marlon.visuals | **REMOVE** — official @redzoneflorida photographer and @rangemanfilmsmedia intern | https://gondola.cc/marlon.visuals |
+| @meade.media_ | **REMOVE** — "official sports photographer for York High School" and Hunts affiliate (organizational role; not necessarily publication) | https://gondola.cc/meade.media_ |
+| @a.g_photography10 | **REMOVE** — Talon Sports Digital Media Director and University of Tampa Student Photographer | https://gondola.cc/a.g_photography10 |
+| @blakeblechner | **REMOVE** — official Iowa Hawkeyes Athletics student photographer; also listed on own website | https://gondola.cc/blakeblechner ; https://www.blakeblechner.com/me |
+| @shotbymaxm | **REMOVE** — "Go Ducks Creative | UO Soccer Student Creative Director" | https://gondola.cc/shotbymaxm |
+| @photosjaketakes | **REMOVE** — Auburn Athletics student photographer | https://gondola.cc/photosjaketakes |
+| @taylornewtonphoto | **REMOVE** — Appalachian State Athletics student photographer | https://gondola.cc/taylornewtonphoto |
+| @munns_media | **REMOVE** — student photographer, Indiana University; photography intern | https://gondola.cc/munns_media |
+| @shotbyburgan | **REMOVE** — X profile explicitly "Sports Reporter @YourTCN"; UNT alum, also older than preferred HS-age group | https://gondola.cc/shotbyburgan ; https://xn--ngbj1b7a.twstalker.com/shotbyburgan |
 
-## Selection/ethics
+**Important nuance:** School/team/athletics creative roles aren't always media OUTLETS. Founder said "make sure they aren't in a media outlet"; we chose to exclude them under a **stricter independence filter**, because they may already have representation, obligations, or editorial conflicts.
 
-- Prioritize **school-age creators** rather than established adult music and concert photographers, but do not claim an unverified age. If under 18, obtain necessary guardian consent and comply with venue restrictions and school safeguarding policies before assignments.
-- Require explicit interest in trying concerts, photographic sample review, distance/transport limits, and fully agreed assignment rights/compensation/expenses. No free-work-for-exposure pressure or guaranteed passes.
-- No unsolicited direct messages, emails or venue inquiries without founder's explicit approval. No subject has consented or been hired.
-- Once founder approves a short roster, ask each person whether they are interested, rather than sending them to a show immediately. Press requests only after contributor accepted proposed terms and consents to their name being used.
+## Verification and recruitment rules
+1. View ACTUAL current Instagram bio (not a stale cached bio); record exact handle, city, current followers and posts.
+2. Reject if affiliated with **any outlet** / editorial brand / sports media network, and under this stricter filter reject official team/school creative staff as well.
+3. Check link in bio, "staff / creator for" labels, collab tagged posts, and their own linked site.
+4. Verify current high-school or early college status **without guessing age**. Respect parental/guardian requirements for minors.
+5. Verify the candidate wants live-music photography and is not already committed to a concert outlet.
+6. Ask about availability and equipment only AFTER owner authorizes outreach.
+7. Preserve rights and pay agreements; provide credential/assignment support but never guarantee a pass.
 
-## Status
-Researched leads: 16. Verified current Instagram account followers live: 0 (blocked access). Confirmed as high school student in public descriptions: Brylie and Sharise; other school-linked names need current age/status confirmation. Outreach sent: **0**. Signed contributors: **0**.
+Status: original leads screened 16; removed 13; original provisionally retained 3; additional independent leads under review 4; **live Instagram-verified fully cleared 0; contacted 0; joined 0**.
+
+No outreach or direct messages without explicit PASS03 founder approval.
