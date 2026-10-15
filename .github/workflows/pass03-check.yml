@@ -33,6 +33,10 @@ jobs:
           test -s _pass03_site/press.html
           test -s _pass03_site/contribute.html
           test -s _pass03_site/content.json
+          test -s _pass03_site/stories/master-of-tributes-afterlife-oct-10-2026/index.html
+          grep -q 'Sanitarium' _pass03_site/stories/master-of-tributes-afterlife-oct-10-2026/index.html
+          ! grep -q 'Loading concert story' _pass03_site/stories/master-of-tributes-afterlife-oct-10-2026/index.html
+          grep -q '/stories/master-of-tributes-afterlife-oct-10-2026/' _pass03_site/index.html
           test -s _pass03_site/sitemap.xml
           test ! -e _pass03_site/CNAME
           node --input-type=module <<'NODE'
