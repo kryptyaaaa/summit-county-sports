@@ -1,80 +1,38 @@
-# PASS03 contributor recruitment — verified public leads
-_Research date: October 15, 2026. **NONE contacted, invited, hired or committed.**_
+# PASS03 — NEW photographer discovery (Instagram-first) — 2026-10-15
 
-**Objective:** Identify independent live-music photographers in different US states who might *voluntarily* contribute to PASS03's national coverage and original features. A public portfolio is not evidence of willingness to join or a small Instagram following. Actual follower counts, current availability, other outlet agreements, and photo licensing rights must be confirmed before recruitment.
+**Founder clarification:** Recruit SMALL / NEW photographers who have NOT ALREADY specialized in concert photography. Stop prioritizing working music professionals. The earlier established-concert-photographer shortlist is **superseded** by this scouting pipeline. No one has been contacted or accepted to join.
 
-**First-wave invite:** 5 creators in distinct markets. Suggest non-exclusive bylined photo essays, artist discovery pitches, and optional mutually-agreed assignments. No guaranteed accreditation, staff status, payment or work. Keep all photographer copyrights unless separately licensed; never require free labor for promised future opportunity. PASS03 founder approves each outgoing invitation.
+## Transparency / verification
 
-| Priority | Photographer | Market | Public portfolio / contact route | Fit and evidence | Relationship/uncertainty |
+Instagram profile pages and grid content are not directly accessible through this research connection (login/cache errors). The usernames below were obtained from *publicly shared Instagram links/handles on recent community posts or photographers' websites*. Other public portfolios were used to check what type of photography they describe. **No claim is made that somebody has never photographed a concert, or that their current follower count is below a numerical threshold.** Those require viewing their full Instagram account, asking the photographer, and confirming the account remains active. Treat each as **Instagram visual review needed** before outreach.
+
+Selection filter once Instagram can be reviewed:
+- Target **under ~2,000 followers**, but prioritize actual quality/activity/interest over follower count.
+- Recent posts dominated by **portraits, school sports, events, street, cars or creative photography**, *not concert gigs*.
+- Active recently; name, city/state and handle accurate.
+- Enough low-light skill / appropriate gear or motivation to learn. Concert access **not promised**.
+- No pressure to accept unpaid assignments; offer optional published bylines, clear licensing and credit, mentorship, and pay for any new commissioned work if a budget is agreed.
+
+## Discovery queue — uncontacted
+
+| Rank | Instagram | Public location | Evidence they may be early-career / photo niche | Source | Verification still needed |
 | --- | --- | --- | --- | --- | --- |
-| 1 | Jade / Jade Clicks Pics | Nashville, TN | https://jadeclickspics.wixsite.com/jadeclickspics · IG @galbabyyy · site email jadeclickspics@gmail.com | Local live entertainment photographer also mentions writing, merch and media reporting | Good dual photo/editorial fit, exact reach unknown |
-| 1 | Caton Puckett / Silver Spoon Photography | Austin, TX | https://www.silverspoon.photography/about · sspoonphoto@gmail.com | College-based concert/editorial photographer interested in band backstories | Strong emerging scene fit; rates/availability unknown |
-| 1 | Isabel Dowell / Isabel Elise | Grand Rapids, MI | https://www.isabelelise.com/ · https://www.instagram.com/isabelelisephoto/ | Publicly discusses documenting emerging West Michigan artists, collaborating locally, and reaching out to other photographers | Good local-scene storytelling fit, already established some industry relationships |
-| 1 | Jen Horton | Seattle, WA | https://www.mynameisjen.com/about · jenhortonwho@gmail.com | Seattle artist describing growth from audience concert photos to documenting performances | Good independent portfolio lead, availability/rates unknown |
-| 1 | Dior Zack Collins | Orlando, FL | https://www.showgraphers.com/photographer/dior-zack-collins · portfolio diorcollins.art (as listed) | Focus on alternative/indie/jazz/punk and small-capacity venues; public booking profile | Listed rates must NOT be assumed free; verify availability and portfolio |
-| 2 | Don Jilla | Pittsburgh, PA | https://www.behance.net/donjilla | Documentary photographer of Pittsburgh underground and live-music culture | Strong PIT NOTES / scene features, has extensive experience |
-| 2 | David Rinaldo | Charlotte, NC | https://davidrinaldo.com/ | Local independent photographer with live music and portrait portfolios | May be more commercial than emerging; check interest |
-| 2 | Jaxon Manning / @jmanning_photography | Denver, CO | https://gondola.cc/posts/70757341-jmanning-photography-instagram · https://www.instagram.com/jmanning_photography/ | Original Denver-area 2026 local-band concert project documented publicly | Good emerging-band fit; current home base & terms to verify |
-| 2 | Kaden Copelan / CXR Productions | Minnesota | https://www.cxrproductions.com/ · cxrproductionswork@gmail.com | Independent media creator doing concert photography/video and promotion | More professional/paid contractor; discuss mutually beneficial collaboration |
-| 2 | Delilah / Delilah Bestler | Chicago, IL | https://www.delilahb.com/ · delilahjbestler@gmail.com | Concert photographer, reviewer/interviewer and playlist work | Existing publication roles; best as guest contributor or partner, verify conflicts |
-| 2 | KC Jonze / @thelonius_punk | Portland, OR | https://www.kcjonze.com/contact · theloniuspunkphoto@gmail.com | Live-music photographer using collages to convey a whole set | Visually distinctive but experienced commercial creator |
-| 2 | Jason McCaffrey | Detroit, MI | https://jasonmccaffrey.com/ | DIY filmmaking and concert shooting for Detroit independent artists | Best for mixed video/photo series; established creative, may be partner |
-| 3 | Emily Butler / @emilybutlerphotography | Atlanta, GA | https://www.instagram.com/emilybutlerphotography/ | Recommended as an Atlanta music photographer in a concert-photography community thread | Secondary-source lead only; verify identity/portfolio/current market before invitation |
-| 3 | Michelle Rezsonya | Indianapolis, IN | https://www.showgraphers.com/photographer/michelle-rezsonya | Indianapolis concert photographer started in 2023 and works with local acts | Profile lists rates starting at $250; don't present work as unpaid |
-| 3 | Allie Loven / Starwave Magazine | Midwest / Chicago roots | https://allielovenphoto.my.canva.site/ | Live-music photographer also founded own music publication | Better for cross-publication partnership than joining under PASS03 |
-| 3 | Anissa Sanchez | Austin, TX | https://www.anissasanchez.com/ | Writer/photographer with music journalism credits | Possible guest music writer; more established, not a beginner photographer |
+| 1 | https://www.instagram.com/aphphotocompany/ | Austin, Texas | Ashlyn says "just starting out" and shares sports/tennis, track, nature, portraits and documentary-style photos; public Tumblr portfolio shows NO concert series in returned work | https://www.reddit.com/r/Austin/comments/1i6lidg/ ; https://www.tumgik.com/aphphotocompany | Current IG grid/followers, current location, confirm no concerts and interest |
+| 2 | https://www.instagram.com/isaiah.img/ | New York City, New York | Self-describes beginner/returning hobbyist in Feb 2026, building street/creative portfolio; says more photos on IG and invites DMs | https://www.reddit.com/r/u_Original_Pianist9748/comments/1r1oo1f/beginner_photographer_looking_to_shoot_in_nyc/ | Current grid, follower count, any concert work, skill/interest |
+| 3 | https://www.instagram.com/pnwframed/ | Seattle, Washington | Self-introduces as a "new Seattle photographer" starting their photography work again in April 2026, offering portraits/elopements | https://www.reddit.com/r/AskSeattle/comments/1sy3icg/seattle_courthouse_elopement_photographer_115_hrs/ | Is account still active? Concert history, followers, willingness |
+| 4 | https://www.instagram.com/caden.travel/ | Denver, Colorado | Replied to a Denver photography opportunity in March 2026, "mainly take photos of nature" and wanted to develop other genres | https://www.reddit.com/r/denverjobs/comments/1rgemsk/photographer_wanted/ | Camera and low-light suitability, active Instagram, followers, concert history |
+| 5 | https://www.instagram.com/cmiles.jpg/ | New York City, New York | October 2026 poster says photography Instagram has "only got a few pictures" and mostly shoots engagement/wedding/portraits | https://www.reddit.com/r/nycparents/comments/1wxwz2q/iso_nycbased_film_photographer/ | Grid, current city, followers, interest in concert work |
+| 6 | https://www.instagram.com/bycsg.photography/ | New York City, New York | October 2026 commenter advertises introductory photo packages in a NYC novice-friendly photographer discussion | https://www.reddit.com/r/nycparents/comments/1wxwz2q/iso_nycbased_film_photographer/ | No explicit beginner claim: verify portfolio, account and concert status |
+| 7 | https://www.instagram.com/dshotphotography/ | Detroit, Michigan | Detroit portrait/wedding/event photo account with a public Linktree created in late 2024; music concerts not highlighted in public bio | https://linktr.ee/DShotPhotography | May already be a serious small business: confirm size, interest and any concert work before classifying as beginner |
+| HOLD | https://www.instagram.com/alanaccphotography/ | Columbus, Ohio | Recommended publicly as a portrait/proposal photographer in Columbus; no live-music specialization cited | https://www.reddit.com/r/Columbus/comments/13wzh9p/ | 2023 reference stale: verify handle, career stage and activity before outreach |
+| HOLD | https://www.instagram.com/sarah.rosephotography/ | Denton / North Texas (2022) | Described as a college journalism and photography student building a portfolio | https://www.reddit.com/r/unt/comments/xnp69t/ | Dated 2022; likely no longer a beginner. Verify everything before using |
+| HOLD | https://www.instagram.com/lensbysj/ | **Location unknown** | Self-described beginner who launched an iPhone photography account July 2025 | https://www.reddit.com/r/InstagramMarketing/comments/1lyl392/ | No known home city or camera capability; do not claim city |
+| HOLD | https://www.instagram.com/violetartichoke/ | **Location unknown** | March 2026 self-described new professional portrait photographer seeking followers/clients | https://www.reddit.com/r/photography/comments/1rys68o/follow_friday_thread_march_20_2026/ | Home city unknown; profile verification needed |
 
-**Public corroboration**
-- Jade: https://jadeclickspics.wixsite.com/jadeclickspics
-- Caton: https://www.silverspoon.photography/about
-- Isabel: https://voyagemichigan.com/interview/check-out-isabel-dowells-story/ and https://www.reddit.com/r/concertphotography/comments/1rcnwf1/ig_photographers_who_shoot_small_venues/
-- Jen Horton: https://www.mynameisjen.com/about
-- Dior: https://www.showgraphers.com/photographer/dior-zack-collins
-- Don: https://www.behance.net/donjilla
-- David: https://davidrinaldo.com/
-- Jaxon: https://gondola.cc/posts/70757341-jmanning-photography-instagram
-- Kaden: https://www.cxrproductions.com/
-- Delilah: https://www.delilahb.com/
-- KC: https://www.kcjonze.com/contact
-- Jason: https://jasonmccaffrey.com/
-- Emily: https://www.reddit.com/r/concertphotography/comments/1qsaxv6/what_concert_photographers_should_i_follow_on_ig/
-- Michelle: https://www.showgraphers.com/photographer/michelle-rezsonya
-- Allie: https://allielovenphoto.my.canva.site/
-- Anissa: https://www.anissasanchez.com/
+## Review pipeline (do not skip)
 
-## Selection criteria and first-wave workflow
+**Researched → Instagram visuals reviewed → beginner suitability confirmed → founder approval → invitation drafted → founder explicit authorization → sent → response received → terms agreed → active contributor**.
 
-1. **Quality:** 6+ strong recent *original* live photos or a convincing artist-profile portfolio.
-2. **Actual home market:** verify current city/state; a travel-ready photographer doesn't count as a new city.
-3. **Fit:** broad genre mix, independent scenes, ethical access, and demonstrated attribution.
-4. **Contributor terms:** distinguish one-off non-exclusive submissions, commissioned paid assignments, and ongoing staff. Founder may offer non-exclusive editorial submissions voluntarily; no unpaid assignment obligations or promised exposure.
-5. **No access guarantees:** individual venue/artist teams must authorize professional cameras and credential requests. Contributors never misrepresent access as approved.
-6. **Written permission:** verify work ownership, use rights, copyright credit, delivery, payment/expenses (if any) and withdrawal/correction procedure before any publication.
-7. **Outreach:** personally review 5 invitations. Send **only if the founder explicitly approves**. Status remains "researched" until sent.
-8. **Trial:** begin with existing work they already own and have rights to submit, or a remote artist feature. Only then consider a negotiated new event assignment.
+Current status: **Researched only**. Number sent: **0**. Number confirmed to have never photographed a concert: **0** (cannot prove a negative without direct check). Number who joined: **0**.
 
-## Draft reusable recruitment note — NOT SENT
-
-**Subject:** PASS03 — independent concert photography contributor opportunity
-
-Hi [first name], I found your work through [specific portfolio / piece] and really liked [specific genuine detail]. I'm building PASS03 (https://pass03.com), a new independent music publication centered on original concert photography, emerging artists and music culture.
-
-We're exploring a small group of non-exclusive photo and writing contributors in different cities. I wanted to see whether you'd be interested in talking about submitting original, credited work or pitching a story about your local music scene. You would retain ownership of your photos; any publication permissions, assignment terms and any fees or expenses would be agreed in advance. We cannot promise credentials or regular paid work.
-
-If you're open to it, I'd love to hear what kind of music coverage you enjoy shooting and whether a collaboration makes sense.
-
-Thanks,
-Mason
-Founder, PASS03
-https://pass03.com
-pass03media@gmail.com
-
-## Status dashboard
-
-| Task | Status |
-| --- | --- |
-| 16 verified or secondary-sourced candidate leads | Researched |
-| First five prioritized | Prepared, subject to owner approval |
-| Invitations / DMs sent | 0 |
-| Contributor agreements signed | 0 |
-| New city contributors committed | 0 |
+If the user supplies Instagram screenshots or uses ChatGPT Work's browser to view Instagram, prioritize checking @aphphotocompany, @isaiah.img, @pnwframed, and @caden.travel. Reject profiles that already have significant published concert portfolios. Do not treat amateurs as an unpaid workforce; concert passes are subject to organizers' approval.
