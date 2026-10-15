@@ -58,7 +58,7 @@ const events = fs.readdirSync(eventsDir).filter(name => name.endsWith('.json')).
 
 fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
-for (const name of ['index.html', 'live.html', 'press.html', 'contribute.html', 'site.js', 'styles.css']) {
+for (const name of ['index.html', 'live.html', 'press.html', 'contribute.html', 'editorial.html', 'media-kit.html', 'discover.html', 'site.js', 'styles.css']) {
   fs.copyFileSync(path.join(source, name), path.join(output, name));
 }
 const images = new Set();
@@ -77,7 +77,7 @@ fs.writeFileSync(path.join(output, 'content.json'), JSON.stringify({
 }, null, 2));
 
 const xml = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-const urls = [domain + '/', domain + '/press.html', domain + '/contribute.html']
+const urls = [domain + '/', domain + '/press.html', domain + '/contribute.html', domain + '/editorial.html', domain + '/media-kit.html', domain + '/discover.html']
   .concat(events.map(event => domain + '/live.html?slug=' + encodeURIComponent(event.slug)));
 fs.writeFileSync(path.join(output, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
   urls.map(url => '  <url><loc>' + xml(url) + '</loc></url>').join('\n') + '\n</urlset>\n');
@@ -171,6 +171,24 @@ for (const event of events) {
     '<meta name="description" content="' + escapeHTML(lead).slice(0, 155) + '">');
   page = page.replace('<meta property="og:type" content="website">',
     '<meta property="og:type" content="article">');
+  // Make the identity of each genuine reported concert article explicit to
+  // search engines and social previews, while preserving the existing byline.
+  const structured = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: event.article_headline || event.title,
+    description: lead,
+    datePublished: event.event_date || undefined,
+    dateModified: event.event_date || undefined,
+    author: { '@type': 'Person', name: event.photographer || 'PASS03 contributor' },
+    publisher: { '@type': 'Organization', name: 'PASS03', url: domain + '/' },
+    mainEntityOfPage: domain + slug,
+    ...(event.cover ? { image: domain + '/' + event.cover } : {}),
+  };
+  page = page.replace('</head>', '<script type="application/ld+json">' +
+    JSON.stringify(structured).replace(/</g, '\\u003c') + '</script></head>');
+  if (event.cover) page = page.replace('</head>',
+    '<meta property="og:image" content="' + domain + '/' + escapeHTML(event.cover) + '"></head>');
   fs.writeFileSync(path.join(articleDir, 'index.html'), page);
 }
 // Preserve old ?slug= bookmarks by routing to the permanent, static article URL.
@@ -181,7 +199,7 @@ legacy = legacy.replace(storyPlaceholder,
 fs.writeFileSync(path.join(output, 'live.html'), legacy);
 fs.writeFileSync(path.join(output, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n' +
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-  [domain + '/', domain + '/press.html', domain + '/contribute.html',
+  [domain + '/', domain + '/press.html', domain + '/contribute.html', domain + '/editorial.html', domain + '/media-kit.html', domain + '/discover.html',
     ...events.map(e => domain + articleUrl(e))].map(url => '  <url><loc>' + xml(url) + '</loc></url>').join('\n') +
   '\n</urlset>\n');
 console.log('PASS03 rendered static story pages:', events.map(e => articleUrl(e)).join(', '));
