@@ -1,38 +1,42 @@
-# PASS03 — NEW photographer discovery (Instagram-first) — 2026-10-15
+# PASS03 — YOUTH SPORTS PHOTOGRAPHERS (Instagram-first shortlist)
+Research date: 2026-10-15. Founder explicitly wants **young sports photographers in other U.S. cities, preferably high school students / early college creators, under 5,000 followers**, rather than experienced concert photographers or adult portrait pros. **No one has been contacted.**
 
-**Founder clarification:** Recruit SMALL / NEW photographers who have NOT ALREADY specialized in concert photography. Stop prioritizing working music professionals. The earlier established-concert-photographer shortlist is **superseded** by this scouting pipeline. No one has been contacted or accepted to join.
+## Evidence/limitations
 
-## Transparency / verification
+Names, reported follower figures and school associations are from recently indexed public Gondola profiles, not live Instagram access. Gondola lists "Total Followers" and may aggregate across connected platforms; it is a **screening proxy**, not a confirmed current Instagram follower count. We were unable to fetch Instagram grids directly. Follow each Instagram link and verify the actual handle, current count, present high-school/college status, recent sports portfolio, music interest, location, and whether they have done concerts (not independently verified). Do not assume a high-school association means the photographer is a current high-school student. Do not assign minors without age-appropriate parent/guardian and venue considerations.
 
-Instagram profile pages and grid content are not directly accessible through this research connection (login/cache errors). The usernames below were obtained from *publicly shared Instagram links/handles on recent community posts or photographers' websites*. Other public portfolios were used to check what type of photography they describe. **No claim is made that somebody has never photographed a concert, or that their current follower count is below a numerical threshold.** Those require viewing their full Instagram account, asking the photographer, and confirming the account remains active. Treat each as **Instagram visual review needed** before outreach.
+## A. Closest fit — explicit high school or student school-media work
 
-Selection filter once Instagram can be reviewed:
-- Target **under ~2,000 followers**, but prioritize actual quality/activity/interest over follower count.
-- Recent posts dominated by **portraits, school sports, events, street, cars or creative photography**, *not concert gigs*.
-- Active recently; name, city/state and handle accurate.
-- Enough low-light skill / appropriate gear or motivation to learn. Concert access **not promised**.
-- No pressure to accept unpaid assignments; offer optional published bylines, clear licensing and credit, mentorship, and pay for any new commissioned work if a budget is agreed.
-
-## Discovery queue — uncontacted
-
-| Rank | Instagram | Public location | Evidence they may be early-career / photo niche | Source | Verification still needed |
+| Priority | Candidate and Instagram | Public area | Reported followers (Gondola) | Public description | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| 1 | https://www.instagram.com/aphphotocompany/ | Austin, Texas | Ashlyn says "just starting out" and shares sports/tennis, track, nature, portraits and documentary-style photos; public Tumblr portfolio shows NO concert series in returned work | https://www.reddit.com/r/Austin/comments/1i6lidg/ ; https://www.tumgik.com/aphphotocompany | Current IG grid/followers, current location, confirm no concerts and interest |
-| 2 | https://www.instagram.com/isaiah.img/ | New York City, New York | Self-describes beginner/returning hobbyist in Feb 2026, building street/creative portfolio; says more photos on IG and invites DMs | https://www.reddit.com/r/u_Original_Pianist9748/comments/1r1oo1f/beginner_photographer_looking_to_shoot_in_nyc/ | Current grid, follower count, any concert work, skill/interest |
-| 3 | https://www.instagram.com/pnwframed/ | Seattle, Washington | Self-introduces as a "new Seattle photographer" starting their photography work again in April 2026, offering portraits/elopements | https://www.reddit.com/r/AskSeattle/comments/1sy3icg/seattle_courthouse_elopement_photographer_115_hrs/ | Is account still active? Concert history, followers, willingness |
-| 4 | https://www.instagram.com/caden.travel/ | Denver, Colorado | Replied to a Denver photography opportunity in March 2026, "mainly take photos of nature" and wanted to develop other genres | https://www.reddit.com/r/denverjobs/comments/1rgemsk/photographer_wanted/ | Camera and low-light suitability, active Instagram, followers, concert history |
-| 5 | https://www.instagram.com/cmiles.jpg/ | New York City, New York | October 2026 poster says photography Instagram has "only got a few pictures" and mostly shoots engagement/wedding/portraits | https://www.reddit.com/r/nycparents/comments/1wxwz2q/iso_nycbased_film_photographer/ | Grid, current city, followers, interest in concert work |
-| 6 | https://www.instagram.com/bycsg.photography/ | New York City, New York | October 2026 commenter advertises introductory photo packages in a NYC novice-friendly photographer discussion | https://www.reddit.com/r/nycparents/comments/1wxwz2q/iso_nycbased_film_photographer/ | No explicit beginner claim: verify portfolio, account and concert status |
-| 7 | https://www.instagram.com/dshotphotography/ | Detroit, Michigan | Detroit portrait/wedding/event photo account with a public Linktree created in late 2024; music concerts not highlighted in public bio | https://linktr.ee/DShotPhotography | May already be a serious small business: confirm size, interest and any concert work before classifying as beginner |
-| HOLD | https://www.instagram.com/alanaccphotography/ | Columbus, Ohio | Recommended publicly as a portrait/proposal photographer in Columbus; no live-music specialization cited | https://www.reddit.com/r/Columbus/comments/13wzh9p/ | 2023 reference stale: verify handle, career stage and activity before outreach |
-| HOLD | https://www.instagram.com/sarah.rosephotography/ | Denton / North Texas (2022) | Described as a college journalism and photography student building a portfolio | https://www.reddit.com/r/unt/comments/xnp69t/ | Dated 2022; likely no longer a beginner. Verify everything before using |
-| HOLD | https://www.instagram.com/lensbysj/ | **Location unknown** | Self-described beginner who launched an iPhone photography account July 2025 | https://www.reddit.com/r/InstagramMarketing/comments/1lyl392/ | No known home city or camera capability; do not claim city |
-| HOLD | https://www.instagram.com/violetartichoke/ | **Location unknown** | March 2026 self-described new professional portrait photographer seeking followers/clients | https://www.reddit.com/r/photography/comments/1rys68o/follow_friday_thread_march_20_2026/ | Home city unknown; profile verification needed |
+| 1 | Brylie Price — https://instagram.com/brylie.price23/ | Carmel, Indiana | 315 | Bio explicitly says Carmel HS student, photographer, sports media/design; Carmel soccer and tennis work | https://gondola.cc/brylie.price23 |
+| 1 | Alan Ko — https://instagram.com/alankophoto/ | Thousand Oaks / greater Los Angeles, CA | 1,645 | Student photographer; TOHS Hoops / Lancer school media and basketball | https://gondola.cc/alankophoto |
+| 1 | Anderson Shows — https://instagram.com/andersonshows.media/ | Oxford, Mississippi | 1,900 | Oxford High School, student sports productions, Charger Media Group; **check present enrollment** | https://gondola.cc/andersonshows.media |
+| 1 | Julia Copas — https://instagram.com/julia_copas/ | Austin, Texas | 501 | Student journalist, McCallum sports/high-school football photography | https://gondola.cc/julia_copas |
+| 1 | Sharise Cho — https://instagram.com/shotsbysharise/ | Buena Park, California | **unknown** | Explicitly says high-school student learning photography/design; basketball photo credits. *Instagram handle* appears in Gondola credited posts and differs from Gondola profile name @sharisecho. Check count before qualifying as <5k. | https://gondola.cc/sharisecho |
+| 2 | Marlon — https://instagram.com/marlon.visuals/ | Weston, Florida | 773 | Cypress Bay football photographer and media intern; school-age **not confirmed** | https://gondola.cc/marlon.visuals |
+| 2 | Henry Meade — https://instagram.com/meade.media_/ | Greater Chicago / York HS, Illinois | 2,130 | Photographs York High School sports; school-age **not confirmed**, says open to work | https://gondola.cc/meade.media_ |
+| 2 | Macen Howells — https://instagram.com/m_howellsmedia/ | Atlanta, Georgia | 4,427 | High-school football and sports videography; **age not established**, larger following near cutoff | https://gondola.cc/m_howellsmedia |
+| 2 | Sydney — https://instagram.com/shots_by_syd_/ | Knoxville, Tennessee | 150 | Small sports photography account; **age and current school status unknown** | https://gondola.cc/shots_by_syd_ |
 
-## Review pipeline (do not skip)
+## B. Young college student sports photographers / backup prospects
 
-**Researched → Instagram visuals reviewed → beginner suitability confirmed → founder approval → invitation drafted → founder explicit authorization → sent → response received → terms agreed → active contributor**.
+| Priority | Candidate and Instagram | Market | Reported Gondola followers | Student evidence | Source |
+| --- | --- | --- | --- | --- | --- |
+| 2 | Abby Gedville — https://instagram.com/a.g_photography10/ | Tampa, Florida | 341 | Student photographer at University of Tampa, sports digital media | https://gondola.cc/a.g_photography10 |
+| 2 | Blake Blechner — https://instagram.com/blakeblechner/ | Iowa City, Iowa | 471 | Student photographer for Iowa Hawkeyes | https://gondola.cc/blakeblechner |
+| 2 | Max Meckoll — https://instagram.com/shotbymaxm/ | Eugene, Oregon | 681 | Oregon marketing student, soccer student creative director | https://gondola.cc/shotbymaxm |
+| 2 | Jacob Taylor — https://instagram.com/photosjaketakes/ | Auburn, Alabama | 1,509 | Auburn Athletics student photographer | https://gondola.cc/photosjaketakes |
+| 2 | Taylor Newton — https://instagram.com/taylornewtonphoto/ | Boone, North Carolina | 2,056 | Student photographer for Appalachian State athletics | https://gondola.cc/taylornewtonphoto |
+| 3 | Mason Munn — https://instagram.com/munns_media/ | Bloomington, Indiana | 1,835 | Indiana University student photographer | https://gondola.cc/munns_media |
+| 3 | Brock Burgan — https://instagram.com/shotbyburgan/ | Denton / DFW, Texas | 2,069 | University of North Texas class of 2026; graduated/near graduating, may be outside preferred age range | https://gondola.cc/shotbyburgan |
 
-Current status: **Researched only**. Number sent: **0**. Number confirmed to have never photographed a concert: **0** (cannot prove a negative without direct check). Number who joined: **0**.
+## Selection/ethics
 
-If the user supplies Instagram screenshots or uses ChatGPT Work's browser to view Instagram, prioritize checking @aphphotocompany, @isaiah.img, @pnwframed, and @caden.travel. Reject profiles that already have significant published concert portfolios. Do not treat amateurs as an unpaid workforce; concert passes are subject to organizers' approval.
+- Prioritize **school-age creators** rather than established adult music and concert photographers, but do not claim an unverified age. If under 18, obtain necessary guardian consent and comply with venue restrictions and school safeguarding policies before assignments.
+- Require explicit interest in trying concerts, photographic sample review, distance/transport limits, and fully agreed assignment rights/compensation/expenses. No free-work-for-exposure pressure or guaranteed passes.
+- No unsolicited direct messages, emails or venue inquiries without founder's explicit approval. No subject has consented or been hired.
+- Once founder approves a short roster, ask each person whether they are interested, rather than sending them to a show immediately. Press requests only after contributor accepted proposed terms and consents to their name being used.
+
+## Status
+Researched leads: 16. Verified current Instagram account followers live: 0 (blocked access). Confirmed as high school student in public descriptions: Brylie and Sharise; other school-linked names need current age/status confirmation. Outreach sent: **0**. Signed contributors: **0**.
