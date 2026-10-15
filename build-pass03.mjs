@@ -112,7 +112,7 @@ const placeholder = '<div id="coverage-grid" class="grid" aria-live="polite"><p 
 if (!home.includes(placeholder)) throw Error('PASS03 homepage archive placeholder changed; aborting build.');
 home = home.replace(placeholder, '<div id="coverage-grid" class="grid" aria-live="polite">' +
   (cards || '<p class="empty">Original music stories coming soon.</p>') + '</div>');
-home = home.replace('ORIGINAL PHOTOGRAPHY / LIVE DOCUMENTATION</p>', events.length + ' PUBLISHED STORY' + (events.length === 1 ? '' : 'IES') + ' / ORIGINAL COVERAGE</p>');
+home = home.replace('ORIGINAL PHOTOGRAPHY / LIVE DOCUMENTATION</p>', events.length + (events.length === 1 ? ' PUBLISHED STORY' : ' PUBLISHED STORIES') + ' / ORIGINAL COVERAGE</p>');
 const featured = events.find(event => event.featured && event.cover) || events.find(event => event.cover) || events[0];
 if (featured) {
   home = home.replace('class="hero-art" href="#coverage"', 'class="hero-art" href="' + articleUrl(featured) + '"');
